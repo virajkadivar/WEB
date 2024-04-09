@@ -1,0 +1,327 @@
+1. WEB
+One type of web that refers to all the public websites or pages that users can access on their local computers and other devices through the internet.
+
+What is the difference between a website and a web application?
+Answer: A website is a collection of webpages that provide information and content. It's like a digital brochure or online document. A web application, on the other hand, is more interactive. It allows users to perform actions, manipulate data, and often requires user accounts or logins. Think of a website as a static display, while a web application is more dynamic and user-driven.
+
+How does the internet work with the web?
+Answer: The internet is the physical infrastructure, a vast network of interconnected computers and servers around the world. The web is a service that runs on top of the internet. It uses the internet's infrastructure to connect users to websites and web applications. The web uses protocols like HTTP to transmit data and display webpages.
+
+What are some of the key technologies behind the web?
+Answer: HTML, CSS, Java, HTTP, Web Browsers etc...
+
+What is the role of search engines in the web?
+A search engine is a software system that provides hyperlinks to web pages and other relevant information on the Web in response to a user's query.
+
+What is the future of the web?
+The future web is like a friend getting a makeover! It'll be smarter, with websites that can anticipate your interests and show you what you want. You'll also be in charge of your own information online, with more control over your privacy. The web might even feel more real, like a 3D world you can interact with, making the whole browsing experience more exciting and personalized.
+
+2. WEBSITE
+Collection of web pages accessible through the internet, accessibly linked and with a specific purpose.
+
+What are some common challenges of website development?
+Answer: Cross-browser Compatibility, Responsive Design, Performance Optimization, Security , Content Management, SEO, UX Design
+
+What are the key elements of a good website?
+Answer: Content, Usability, Visual Design, Technical aspects etc....
+
+What are the benefits of having a website?
+Answer: Be seen by more people, Show what you're all about, Open all the time, Save money on advertising, Make things easier, Stay connected, Build trust.
+
+What are some common challenges of website development?
+Answer: Keeping up with the times, Making it look good and work well, Keeping it safe, Having enough content, Getting found online.
+
+3. WWW
+World Wide Web
+All the public websites or pages that users can access on their local computers and other devices through the internet.
+
+Explain the difference between the World Wide Web (WWW) and the internet.
+Answer: The internet is a vast network of interconnected computers that allows communication and data transfer across the globe. (WWW) is a service that utilizes the internet to access and display information in a user-friendly way. 
+
+What are some of the key benefits of the WWW?
+Answer: Access to information, Global communication, E-commerce, Accessibility of resources, Innovation and creativity.
+
+What are some of the challenges associated with the WWW?
+Answer: Security threats, Misinformation and fake news, Information overload, Addiction and distraction.
+
+How do you think the WWW will evolve in the future?
+The WWW is likely to become more immersive and interactive. We might see increased use of artificial intelligence, voice search, and 3D technologies. Additionally, there might be a focus on decentralization and user control over data, along with advancements in security measures to combat online threats.
+
+4. HOST
+A web server that stores and transmits the data for one or more websites.
+
+What is web hosting, and why is it important for websites?
+Answer: Web hosting is renting space online for your website. It gives your website an address, stores its content, keeps it running, and offers security. Without it, your website would be a hidden house no one can find!
+
+What is a network host and how does it differ from a network device?
+Answer: A network host is any device on a network that can participate in user applications. This includes computers, laptops, tablets, smartphones. Network devices, on the other hand, are dedicated hardware components that facilitate communication on a network. They don't directly participate in user applications.
+
+5. CLIENT
+client refers to a computer system that accesses services or resources provided by another system, known as the server. This client-server model is commonly used in networks and the internet.                        
+
+What is a client in IT?
+A client is a computer system that uses services provided by another system, the server.
+
+How does a client work?
+A client sends requests to a server to access resources or services, and the server processes these requests and sends a response back to the client.
+
+What is the difference between a client and a server?
+A server provides services or resources to clients, while a client accesses these services or resources.
+
+6. SERVER
+Server provides resources, data, services, or programs to other computers, known as clients, over a network.
+
+What is a server's primary function in a network?
+Answer: A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, in a network.
+
+What are the different types of servers?
+Answer: There are various server types, including web servers, mail servers, database servers, application servers, and file servers.
+
+How does a server connect to the internet?
+Answer: A server connects to the internet through an internet service provider (ISP) using a network interface, such as internet or Wi-Fi.
+
+What is server uptime, and why is it important?
+Answer: Server uptime is the amount of time a server remains operational and available for users. High uptime is crucial for maintaining user satisfaction, ensuring continuous service, and minimizing potential revenue loss.
+
+7. DOMAIN
+A set of websites on the internet that end with the same letters, for example .com
+
+What is a domain name, and what is its purpose?
+Answer: A domain name is a human-readable and memorable address for a website, which simplifies the process of accessing a website by mapping it to a unique IP address.
+
+What is a subdomain, and how is it created?
+Answer: A subdomain is a separate domain that shares the same base domain but has a unique prefix, such as "blog.example.com." Subdomains are created by adding a new DNS record to the parent domain.
+
+Types of domain?
+Answer: 3 { sub domain, domain name and top domain }
+
+What is sub domain ?
+Answer: A subdomain is a separate domain that shares the same base domain but has a unique prefix. It allows you to create a distinct and independent website or service while still being associated with the primary domain. ex. www
+
+What is domain name? 
+A domain name is a human-readable and memorable address for a website, It is a part of the Uniform Resource Locator (URL). ex. name of website
+
+What is top domain?
+A top-level domain (TLD) is the last part of a domain name, located after the final dot. ex. .com .gov 
+
+
+8. HOSTING
+The process of loading the website into the server
+
+What is web hosting, and what is its purpose?
+Answer: Web hosting is a service that allows individuals and organizations to make their websites accessible on the internet by storing and managing website files, databases, and other resources on a server connected to the internet.
+
+What are the different types of web hosting services?
+Answer: There are various web hosting services, including shared hosting, virtual private server (VPS) hosting, dedicated server hosting, cloud hosting, and managed hosting, each with its own advantages and disadvantages depending on the specific needs of the user.
+
+What is managed hosting, and what are its benefits?
+Answer: Managed hosting is a web hosting service where the hosting provider takes care of server management tasks, such as software updates, security, and technical support, allowing users to focus on their core business activities. This service is beneficial for businesses that lack the expertise or resources to manage their hosting infrastructure.
+
+What is the difference between managed and unmanaged hosting, and when to choose each?
+Answer: Managed hosting is a service where the hosting provider handles server management tasks, while unmanaged hosting requires users to manage their servers themselves. Users should choose managed hosting when they lack the expertise or resources to manage their hosting infrastructure, while unmanaged hosting is suitable for those with technical expertise and prefer full control over their server configuration.
+
+What are the advantages and disadvantages of cloud hosting?
+Answer: Cloud hosting offers several advantages, such as scalability, flexibility, and cost-effectiveness. However, it also has some disadvantages, including security concerns and dependence on internet connectivity. Overall, the choice between cloud and traditional hosting depends on your specific needs and priorities.
+
+9. NETWORK
+A network is a system of two or more devices that are connected together for the purpose of sharing resources and exchanging data. These devices can be computers, printers, servers, smartphones, or any other electronic device that can communicate. The connections can be physical wires, or wireless connections like Wi-Fi or Bluetooth.
+
+What are the benefits of using a cloud-based network for a business?
+Answer: Cost savings, Increased collaboration, Enhanced security, Flexibility, Access to advanced technology, Improved reliability, Better management
+
+How can a network be secured against cyber threats?
+Answer: Use strong passwords, Use firewalls and intrusion detection/prevention systems, Use encryption, Monitor your network, Train your employees, Use a next-generation firewall.
+
+Types of network ?
+Answer: 3 main
+Local Area Network (LAN)
+Wide Area Network (WAN)
+Metropolitan Area Network (MAN)
+Personal Area Network (PAN)
+Wireless Local Area Network (WLAN)
+Virtual Private Network (VPN)
+
+What is the difference between a LAN and a WAN?
+A LAN (Local Area Network) is a network that connects computers and devices within a limited area, like a home, office, or school. It typically operates within a single building or campus and is managed privately by the organization. In contrast, a WAN (Wide Area Network) spans a larger geographical area, connecting multiple LANs and other networks across cities, countries, or even continents. WANs are often managed by telecommunication companies and facilitate long-distance communication between different locations.
+
+
+10. HTTP
+Hypertext Transfer Protocol
+It is a protocol used to transmit hypermedia documents like HTML over the internet. It’s a foundational technology for the web, enabling the exchange of data—text, images, videos, etc.—between web servers and clients. It works on a client-server model and is stateless, with each client request processed independently. 
+
+11. HTTPS
+Hypertext Transfer Protocol Secure
+It is the secure version of HTTP. which is the protocol used for transmitting data between a web browser and a website. 
+
+What is HTTP and how does it work? 
+HTTP (Hypertext Transfer Protocol) is a protocol used for transferring data on the internet. It works by establishing a connection between a client (such as a web browser) and a server (such as a website), where the client sends a request for data and the server responds with the requested information. This communication is done through a series of text-based messages, allowing for the exchange of web pages, images, videos, and other resources.
+
+What is the difference between HTTP and HTTPS?
+Answer: HTTPS is a more secure and reliable version of HTTP that provides encryption, authentication, and data integrity. HTTP, on the other hand, is a less secure protocol that does not provide encryption or authentication.
+
+What are the different types of HTTP requests (e.g. GET, POST, PUT, DELETE)?
+Answer: 1. GET: Retrieves a resource from a server.
+2. POST: Creates a new resource on a server.
+3. PUT: Updates an existing resource on a server.
+4. DELETE: Deletes a resource from a server.
+
+What is the role of the HTTP protocol in web development?
+Answer: The HTTP protocol facilitates communication between clients (such as web browsers) and servers, allowing for the transfer of data, requests for web pages, and responses. In web development, it serves as the foundation for retrieving and delivering content, enabling the creation and functioning of websites and web applications.
+
+12. URL
+Uniform Resource Locator
+Address of website 
+
+Types of URL?
+2 type of url 
+1. request  2. domain
+
+What is a URL?
+Answer: A URL (Uniform Resource Locator) is a web address that specifies the location of a resource on the internet. It is the unique address of a web page or file on the internet.
+
+What is a domain name in a URL?
+Answer: A domain name in a URL is the unique name of a website or web server. It is the part of the URL that comes after the protocol (such as "example.com").
+
+Can you explain the basic structure of a URL?
+Answer: A URL typically consists of four parts: protocol (http:// or https://), domain name (example.com), path (directory/file), and query parameters (if any). For example, https://www.example.com/directory/file?param1=value1&param2=value2.
+
+13. URI
+Uniform Resource Identifier (URI) is a unique sequence of characters that identifies an abstract or physical resource, such as resources on a webpage, mail address, phone number, books, real-world objects such as people and places, concepts.
+
+What does URI stand for, and what is its primary purpose?
+Answer: URI stands for Uniform Resource Identifier. Its primary purpose is to identify a resource on the web and provide a way to locate it. A URI can be a URL (Uniform Resource Locator), URN (Uniform Resource Name), or other types of identifiers used to reference a resource.
+
+Can you explain the difference between a URL and a URI?
+Answer: A URL is a specific type of URI that is used to locate a resource on the web. The main difference between a URL and a URI is that a URL is a type of URI that specifies the location of a resource on the web, while a URI can be used to identify a resource regardless of its location.
+
+14. ADDRESS BAR
+In a web browser, the address bar (also location bar or URL bar) is the element that shows the current URL. The user can type a URL into it to navigate to a chosen website.
+
+What is the purpose of the address bar in a web browser?
+Answer: the address bar is an essential feature of web browsers that allows users to easily navigate the web and access the information they need.
+
+How do I clear my address bar history?
+Answer: In most browsers, you can clear your address bar history by deleting your browsing history. Look for the "Clear browsing data" option in your browser's settings.
+
+Can I customize the appearance of my address bar?
+Answer: Customization options vary by browser. Some allow you to change the color or theme of the address bar.
+
+How do I remove suggested websites from my address bar?
+Answer:  In most browsers, you can remove suggested websites from the address bar by deleting individual URLs from your browsing history.
+
+15. BROWSER
+Provides graphical view of coding.
+
+What is a web browser?
+Answer: A web browser is a software application used to access and display websites on the internet. Examples include Google Chrome, Mozilla Firefox, Microsoft Edge, and Brave.
+
+what is browser primary function?
+Answer: The primary function of a web browser is to access and display content on the internet. It interprets HTML code to render web pages, allowing users to navigate websites, interact with content, and access various online services and resources.
+
+Can you name some popular web browsers used today?
+Answer: 
+ Google Chrome
+ Mozilla Firefox
+ Safari (by Apple)
+ Microsoft Edge
+ Brave
+ Opera
+ Internet Explorer (by Microsoft)
+ Tor Browser
+
+Explain the difference between a web browser and a search engine?
+Answer: A browser helps you explore the internet, while a search engine helps you find what you're looking for within it.
+
+
+16. EXTANTION
+The ending of a file that helps identify the file type in operating systems.
+
+How do file extensions help in identifying file types?
+Answer: File extensions, like .txt for text, tell you what type of file it is. They help computers open files with the right program. So, .mp3 is for music, and .pdf is for documents.
+
+Explain the difference between a file's extension and its file format? 
+Answer: A file’s extension is the label at the end of a file name, like .jpg or .doc. It hints at the file format but isn’t the format itself. The file format is the structure and rules that organize the file’s data inside.
+
+Name two file extensions commonly used for image files.
+Answer: Two common file extensions for image files are .jpg and .png.
+
+Give an example of a file extension commonly associated with text documents.
+Answer: A common file extension for text documents is .txt.
+
+
+17. WEBPAGE / WEBSITE / WEBAPPLICATION
+A web page is a document written in hypertext (also known as HTML) that you can see online, using a web browser. 
+A website (also written as a web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.
+A web application is software that runs in your web browser.
+
+What role do HTML, CSS, and JavaScript play in the creation of webpages?
+Answer: HTML, CSS, and JavaScript are the core technologies for building Web pages:
+HTML is the standard markup language used to create the structure of web pages. It allows you to define elements such as headings, paragraphs, links, images, and other content blocks.
+CSS is the language used to present the document you create with HTML. Where HTML comes first and creates the foundation for your page, CSS comes along next and is used to create the page’s layout, color schemes, fonts, and style.
+JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+
+Describe the difference between a website and a web page.
+Answer: A web page is a single document on the internet, usually consisting of text, images, and links. A website is a collection of related web pages linked together under one domain name. Think of a web page as a single chapter of a book, and a website as the entire book itself.
+
+How do web browsers interact with websites to display content to users?
+Answer: Web browsers act like a bridge between you and the internet. When you type a website’s address, the browser fetches the web pages from a server and displays them on your screen. It translates complex code into the text, images, and interactive elements that we see and use.
+
+What are some examples of popular web applications?
+Answer:  Social Media Platforms: Facebook, Twitter, Instagram
+		Cloud Storage and File Sharing: Google Drive, Dropbox, OneDrive
+
+
+18. PROGRAM
+A program is a set of instructions that a computer follows in order to perform a particular task. 
+
+How do you write a computer program?
+You write a computer program using a programming language, such as Python or Java, in a code editor or IDE.
+
+What is the purpose of a computer program?
+The purpose of a computer program is to automate tasks, solve problems, or provide functionality.
+
+What are the common elements of a computer program?
+Common elements include variables, data types, loops, conditionals, functions, and objects.
+
+What is a high-level program?
+A high-level program is a computer program written in a programming language that is easy for humans to understand.
+
+What is a low-level program?
+A low-level program is a computer program written in a programming language that is closer to machine code.
+
+19. PROGRAMING LANGUAGE
+A programming language is a set of instructions written by a programmer to deliver instructions to the computer to perform and accomplish a task. 
+
+What are programming languages?
+These are languages like Python, Java, or C++ that computers understand to perform tasks.
+
+What is the most popular programming language today?
+   - JavaScript
+
+What is the oldest programming language still in use? 
+   - Fortran
+
+What are the three main types of programming languages?
+   - Scripting languages, low-level languages, and high-level languages.
+
+What is the most popular language for web development?
+   - JavaScript
+
+What is the most popular scripting language?
+   - JavaScript
+
+20. VPN
+A virtual private network or VPN, is an encrypted connection over the Internet from a device to a network.
+
+What is the main purpose of a VPN?
+   - The main purpose of a VPN is to provide users with secure and private access to remote networks and resources. It allows users to browse the internet privately and access restricted websites and services.
+
+How does a VPN work at a basic level?
+   - A VPN works by creating a secure "tunnel" between a device and a VPN server that encrypts and routes all internet traffic through that server. This obscures the user's true IP address and location.
+
+What are some drawbacks of using a free VPN?
+   - Drawbacks of free VPNs include slower speeds, data limits, potential security issues, and the fact that your data may be sold or mined by the VPN provider.
+
+What are some popular paid VPN providers?
+   - Popular paid providers include ExpressVPN, NordVPN, Surfshark, CyberGhost and ProtonVPN.
+

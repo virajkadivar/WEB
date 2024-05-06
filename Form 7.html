@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation Request Form</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Reservation Request</h2>
+<form action="/submit-reservation" method="post">
+  <fieldset>
+ <legend>General Information</legend>
+    <label for="arrival-date">Arrival date:</label>
+    <input type="text" id="arrival-date" name="arrival_date" required>
+    <span class="error">Arrival date is invalid.</span><br>
+    <label for="nights">Nights:</label>
+    <input type="number" id="nights" name="nights" required>
+    <span class="error">Nights must be a number.</span><br>
+    <label for="adults">Adults:</label>
+    <input type="number" id="adults" name="adults" min="1" required><br>
+    <label for="children">Children:</label>
+    <input type="number" id="children" name="children" min="0" required><br>
+  </fieldset>
+  <fieldset>
+    <legend>Preferences</legend>
+    <label>Room type:</label>
+    <input type="checkbox" id="standard" name="room_type" value="standard">
+    <label for="standard">Standard</label>
+    <input type="checkbox" id="business" name="room_type" value="business">
+    <label for="business">Business</label>
+    <input type="checkbox" id="suite" name="room_type" value="suite">
+    <label for="suite">Suite</label><br>
+    <label>Bed type:</label>
+    <input type="checkbox" id="king" name="bed_type" value="king">
+    <label for="king">King</label>
+    <input type="checkbox" id="double-double" name="bed_type" value="double_double">
+    <label for="double-double">Double Double</label><br>
+    <input type="checkbox" id="smoking" name="preferences" value="smoking">
+    <label for="smoking">Smoking</label>
+  </fieldset>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error">Name is required.</span><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error">Email address is invalid.</span><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <span class="error">Phone number is invalid.</span><br>
+  </fieldset>
+  <input type="submit" value="Submit Reservation">
+  <input type="reset" value="Clear">
+</form>
+</body>
+</html>

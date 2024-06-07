@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">HTML Images</h1>
+    <li>how to add the image in HTML, along with knowing its implementation & usage through the examples.</li>
+    <li>In earlier times, the web pages only contains textual contents, which made them appear quite boring and
+        uninteresting. </li>
+
+    <br>
+    <li>There are 2 ways to insert the images into a webpage:</li>
+    <li>By providing a full path or address (URL) to access an internet file.</li>
+    <li>By providing the file path relative to the location of the current web page file.</li>
+
+    <br>
+    <h5>Adding images on a webpage:</h5>
+    <li>The &lt;img&gt; tag is used to add or embed the images to a webpage/website.</li>
+    <li> The “img” tag is an empty tag, which means it can contain only a list of attributes and it has no closing tag.
+    </li>
+    <li>The addition of the images improves the quality along with enhancing the design structure, appearance of the
+        webpage.</li>
+    <li>A website does not directly add images to a web page, as the images are linked to web pages by using the
+        &lt;img&gt; tag which holds space for the image. </li>
+
+    <br>
+    <strong>Syntax:</strong><br>
+    <li>&lt;img src="url" alt="some_text" width="" height=""&gt;</li>
+
+    <br>
+    <strong>Attribute: </strong> The &lt;img&gt; tag has following attributes:
+    <br>
+    <br>
+    <li><strong>src:</strong> It is used to specify the path to the image.</li>
+    <li><strong>alt:</strong> It is used to specify an alternate text for the image. It is useful as it informs the user
+        about what the image
+        means and also due to any network issue if the image cannot be displayed then this alternate text will be
+        displayed.</li>
+    <li><strong>crossorigin:</strong> It is used to import images from third-party sites that allow cross-origin access
+        to be used with
+        canvas.</li>
+    <li><strong>height:</strong> It is used to specify the height of the image.</li>
+    <li><strong>width:</strong> It is used to specify the width of the image.</li>
+    <li><strong>ismap:</strong> It is used to specify an image as a server-side image map.</li>
+    <li><strong>loading:</strong> It is used to specify whether a browser should defer the loading of images until some
+        conditions are met or
+        load an image immediately.</li>
+    <li><strong>longdesc:</strong> It is used to specify a URL to a detailed description of an image.</li>
+    <li><strong>referrerpolicy:</strong> It is used to specify which referrer information to use when fetching an image
+        i.e. no-referrer,
+        no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url.</li>
+    <li><strong>sizes:</strong> It is used to specify image sizes for different page layouts.</li>
+    <li><strong>srcset:</strong> It is used to specify a list of image files to use in different situations.</li>
+    <li><strong>usemap:</strong> It is used to specify an image as a client-side image map.</li>
+
+
+    <h3>src: </h3>
+    <li>The src stands for source.</li>
+    <li>Every image has an src attribute which tells the browser where to find the image you want to display.</li>
+    <li>The URL of the image provided points to the location where the image is stored. </li>
+    <li>When the webpage loads for the first time, then the browser gets the image from a web server and inserts it into
+        the page.</li>
+    <li>If the image is not spotted by the browser then users will get a broken link icon. </li>
+    <li>It might be possible if the file path is wrong or the image got deleted from that location.</li>
+
+    <h3>alt: </h3>
+    <li>If the image cannot be displayed then the alt attribute acts as an alternative description for the image.</li>
+    <li>The value of the alt attribute is a user-defined text. </li>
+    <li> It generally happens when the user, for some reason, cannot view it due to a slow internet connection or an
+        error in the src attribute, or if the user uses a screen reader.</li>
+
+    <h3>Setting width and height of Image: </h3>
+    <li>The width and height attributes are used to specify the height and width of an image.</li>
+    <li>The attribute values are specified in pixels by default. </li>
+    <li> The width and height attributes are always declared in pixels. </li>
+
+    <h3>Adding titles to Image: </h3>
+    <li>Along with the images, titles can also be added to images to provide further information related to the inserted
+        image.</li>
+    <li>For inserting a title, the title attribute is used.</li>
+
+    <h3>Setting style to the Image:</h3>
+    <li>using the border property to decorate the image.</li>
+    <li>By default, every picture has a border around it.</li>
+    <li>By using the border attribute, the thickness of the border can be changed.</li>
+    <li> A thickness of “0” means that there will be no border around the picture.</li>
+
+    <h3>Aligning an Image: </h3>
+    <li>By default, an image is aligned on the left side of the page, but it can be aligned to the centre or right using
+        the align attribute.</li>
+
+    <h3>Adding Image as a Link:</h3>
+    <li>An image can work as a link with a URL embedded in it. It can be done by using the “img” tag inside an “a” tag.
+    </li>
+    <li>need to specify the file path in order to render the image on the webpage.</li>
+    <li>File paths are used to link external resources such as images, videos, style sheets, JavaScript, displaying
+        other web pages, etc.</li>
+    <li> To insert a file on a web page its source must be known.</li>
+
+    <h4>File paths are of two types:</h4>
+    <li><strong>Absolute File Paths:</strong>It always contains the root element along with the complete directory list
+        required to locate the file.</li>
+    <li><strong>Relative File Paths:</strong>It is the hierarchical path representation that locates the file or folder
+        on a file system beginning from the current directory.</li>
+
+    <br>
+    <br>
+    <h4><strong>Adding animated Image:</strong>Animated images in .gif format can also be added using the “img” tag.
+    </h4>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    <h4>S.No.</h4>
+                </th>
+                <th>
+                    <h4>Abbreviation</h4>
+                </th>
+                <th>
+                    <h4>File Type</h4>
+                </th>
+                <th>
+                    <h4>Extension</h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.&nbsp;</td>
+                <td>
+                    <p style="text-align:center;">PNG</p>
+                </td>
+                <td>Portable Network Graphics.</td>
+                <td>.png</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>
+                    <p style="text-align:center;">JPEG.</p>
+                </td>
+                <td>Joint Photographic Expert Group image.</td>
+                <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+            </tr>
+            <tr>
+                <td>3.&nbsp;</td>
+                <td>
+                    <p style="text-align:center;">SVG</p>
+                </td>
+                <td>Scalable Vector Graphics.</td>
+                <td>.svg.</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>
+                    <p style="text-align:center;">GIF</p>
+                </td>
+                <td>Graphics Interchange Format.</td>
+                <td>.gif</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>
+                    <p style="text-align:center;">ICO</p>
+                </td>
+                <td>Microsoft Icon.</td>
+                <td>.ico, .cur</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>
+                    <p style="text-align:center;">APNG&nbsp;</p>
+                </td>
+                <td>Animated Portable Network Graphics.</td>
+                <td>.apng</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+
+</html>

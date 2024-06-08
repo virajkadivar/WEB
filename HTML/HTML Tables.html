@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML Tables</h1>
+    <li>HTML tables offer a powerful tool for presenting data on your website.</li>
+
+    <h2>What is HTML Tables?</h2>
+    <li>An HTML Table is an arrangement of data in rows and columns in tabular format. </li>
+    <li>Tables are useful for various tasks, such as presenting text information and numerical data. </li>
+    <li>A table is a useful tool for quickly and easily finding connections between different types of data. </li>
+    <li>Tables are also used to create databases.</li>
+
+    <h2>Tags used in HTML Tables</h2>
+    <table border="1">
+        <tr>
+            <th>HTML Tags</th>
+            <th>Descriptions</th>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Defines the structure for organizing data in rows and columns within a web page.</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Represents a row within an HTML table, containing individual cells.</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td>Shows a table header cell that typically holds titles or headings.</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt;</td>
+            <td>Represents a standard data cell, holding content or data.</td>
+        </tr>
+        <tr>
+            <td>&lt;caption&gt;</td>
+            <td>Provides a title or description for the entire table.</td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Defines the header section of a table, often containing column labels.</td>
+        </tr>
+        <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Represents the main content area of a table, separating it from the header or footer.</td>
+        </tr>
+        <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Specifies the footer section of a table, typically holding summaries or totals.</td>
+        </tr>
+        <tr>
+            <td>&lt;col&gt;</td>
+            <td>Defines attributes for table columns that can be applied to multiple columns at once.</td>
+        </tr>
+        <tr>
+            <td>&lt;colgroup&gt;</td>
+            <td>Groups together a set of columns in a table to which you can apply formatting or properties
+                collectively.</td>
+        </tr>
+    </table>
+
+
+    <h2>Defining Tables in HTML</h2>
+    <li>An HTML table is defined with the “table” tag. Each table row is defined with the “tr” tag.</li>
+    <li>A table header is defined with the “th” tag. By default, table headings are bold and centered.</li>
+    <li>A table data/cell is defined with the “td” tag.</li>
+
+    <h3>Table Cells</h3>
+    <li>Table Cell are the building blocks for defining the Table.</li>
+    <li>It is denoted with &lt;td&gt; as a start tag & &lt;/td&gt; as a end tag.</li>
+    <li><strong>Syntax:</strong>&lt;/td&gt; Content...&lt;/td&gt; </li>
+
+    <h3>Table Rows</h3>
+    <li>The rows can be formed with the help of combination of Table Cells.</li>
+    <li>It is denoted by &lrarr;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</li>
+    <li><strong>Syntax:</strong>&lt;tr&gt; Content...&lt;/tr&gt; </li>
+
+    <h3>Table Headers</h3>
+    <li>The Headers are generally use to provide the Heading.</li>
+    <li>The Table Headers can also be used to add the heading to the Table. </li>
+    <li>This contains the &lt;th&gt; & &lt;/th&gt; tags.</li>
+    <li><strong>Syntax:</strong>&lt;th&gt; Content...&lt;/th&gt; </li>
+
+    <h2>Adding a border to an HTML Table</h2>
+    <li>A border is set using the CSS border property. </li>
+    <li>If we do not specify a border for the table, it will be displayed without borders.</li>
+    <li><strong>Syntax:</strong><br>
+        table, th, td { <br>
+        border: 1px solid black;<br>
+        }</li>
+
+    <h2>Adding Collapsed Borders in an HTML Table</h2>
+    <li>For borders to collapse into one border, add the CSS border-collapse property.</li>
+    <li><strong>Syntax:</strong><br>
+        table, th, td { <br>
+        border: 1px solid black; <br>
+        border-collapse: collapse; <br>
+        }</li>
+
+    <h2>Adding Cell Padding in an HTML Table</h2>
+    <li>Cell padding specifies the space between the cell content and its borders. </li>
+    <li> If we do not specify a padding, the table cells will be displayed without padding.</li>
+    <li><strong>Syntax:</strong><br>
+        th, td { <br>
+        padding: 20px;<br>
+        }</li>
+
+    <h2>Adding Left Align Headings in an HTML Table</h2>
+    <li>By default, the table headings are bold and centered. </li>
+    <li>To left-align the table headings, we must use the CSS text-align property. </li>
+    <li><strong>Syntax:</strong><br>
+        th { <br>
+        text-align: left; <br>
+        }</li>
+
+    <h2>Adding Border Spacing in an HTML Table</h2>
+    <li>Border spacing specifies the space between the cells.</li>
+    <li>To set the border-spacing for a table, we must use the CSS border-spacing property.</li>
+    <li><strong>Syntax:</strong><br>
+        table { <br>
+        border-spacing: 5px; <br>
+        }</li>
+
+
+    <h2>Adding Cells that Span Many Columns in HTML Tables</h2>
+    <li>To make a cell span more than one column, we must use the colspan attribute.</li>
+
+    <h2>Adding Cells that span many rows in HTML Tables</h2>
+    <li>To make a cell span more than one row, we must use the rowspan attribute.</li>
+
+    <h2>Adding a Caption in an HTML Table</h2>
+    <li>To add a caption to a table, we must use the “caption” tag.</li>
+    <li><strong>Syntax:</strong>
+        <br>&lt;table style="width:100%"&gt; <br>
+        &lt;caption&gt;DETAILS&lt;/caption&gt;
+    </li>
+
+    <h2>Adding a Background Colour to the Table</h2>
+    <li>A color can be added as a background in an HTML table using the “background-color” option.</li>
+    <li><strong>Syntax:</strong><br>
+        table#t01 { <br>
+        width: 100%;<br>
+        background-color: #f2f2d1;<br>
+        }</li>
+
+    <h2>Creating Nested Tables</h2>
+    <li>Nesting tables simply means making a Table inside another Table. </li>
+    <li>Nesting tables can lead to complex tables layouts, which are visually interesting and have the potential of introducing errors. </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

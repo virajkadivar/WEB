@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Paths
+    </title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML File Paths</h1>
+    <li>HTML file paths specify the location of HTML files within a directory structure.</li>
+    <li>They can be absolute (starting from the root directory) or relative (starting from the current directory),
+        facilitating file organization and linking.</li>
+    <li>To insert a file in a web page, its source must be known. For example, the syntax (&lt;img src=” ” alt=” “&gt;)
+        is
+        used to insert an image file, where the path of the file is mentioned in the source (src). </li>
+
+    <h3>Examples of File Path</h3>
+    <table border="1">
+        <tr>
+            <th>Path</th>
+            <th>Descriptions</th>
+        </tr>
+        <tr>
+            <td>&lt;img src="../pc_img.png"&gt;</td>
+            <td>When the file is located in the folder that is one level up from the current directory.</td>
+        </tr>
+        <tr>
+            <td>&lt;img src="/pics/pc_img.png"&gt;</td>
+            <td>When the files are in the folder &amp; it is located at the root of the current directory.</td>
+        </tr>
+        <tr>
+            <td>&lt;img src="pics/pc_img.png"&gt;</td>
+            <td>The files are located inside the folder in the current working directory.</td>
+        </tr>
+        <tr>
+            <td>&lt;img src="pc_img.png"&gt;</td>
+            <td>When the files are located in the current working directory.</td>
+        </tr>
+    </table>
+
+    <h3>HTML File Paths Examples</h3>
+    File paths are of two types:
+    <li>Absolute File Paths</li>
+    <li>Relative File Paths</li>
+
+
+    <h4>Absolute File Paths</h4>
+    <li>Absolute file paths specify the complete location of a file in a system, starting from the root directory.  </li>
+    <li>They include the full directory path, ensuring precise file identification regardless of current directory location. </li>
+   
+    <li><strong>Syntax:</strong></li><br>
+    <li>&lt;img src="https://media.viraj.org/wp-content/uploads/pc.png" alt="My Image"&gt;</li>
+
+    <h4>Relative File Path</h4>
+    <li>A relative file path in HTML refers to the location of a file relative to the current web page's location.</li>
+    <li><strong>Syntax:</strong></li><br>
+    <li>&lt;img src="/images/pc.jpg" alt="My Image"&gt;</li>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Color Styles and HSL</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML Color Styles and HSL</h1>
+    <li>HTML color styles offer various ways to specify colors on a webpage. </li>
+    <li>For Example using HSL (Hue, Saturation, Lightness) allows for intuitive color control, where you adjust hue for
+        the type of color, saturation for intensity, and lightness for brightness. </li>
+    <li>Here are the different styles that can be used to create new colors by the combination of different colors.</li>
+
+
+    <h2>Hexadecimal Style:</h2>
+    <li>In this style, we define the color in 6-digit hexadecimal numbers (from 0 to F). It is denoted by '#'. </li>
+    <li>The first two digits indicate red color, the next two green color, and the last two blue color.</li>
+
+    <li><strong>Syntax:</strong></li>
+    h1 { <br>
+    color: #800080; <br>
+    }
+
+    <h2>RGB Style [Red Green Blue]:</h2>
+    <li>In this, we need to give 3 numbers indicating the amount of red, green, and blue colors respectively required in
+        the mixed color.</li>
+    <li>The range of each color is from 0 to 255.</li>
+    <strong>Note:</strong> rgba(0, 0, 0) is Black color and rgb(255, 255, 255) is White color.
+    <li>Syntax:</li>
+    h1{<br>
+    color:rgb(0, 255, 0);<br>
+    }
+
+    <h2>RGBA Style [Red Green Blue Alpha]:</h2>
+    <li>This style allows us to make the color transparent according to our will.</li>
+    <li>Alpha indicates the degree of transparency. </li>
+    <li>The range of green, blue, and red is from 0 to 255 and that of alpha is from 0 to 1.</li>
+    <li><strong>Syntax:</strong></li>
+    h1{<br>
+    color:rgba(11, 99, 150, 1);<br>
+    }
+
+
+    <h2>HSL colors:</h2>
+    Here ‘H’ stands for hue, ‘S’ for Saturation, and ‘L’ for Lightness. HSL color values are specified as:
+    <li>Hue is the color of the image itself. Its range is from 0 to 360. 0 is for red, 120 is for green and 240 is for
+        blue.</li>
+    <li>Saturation is the intensity/purity of the hue. 0% is for a shade of gray, and 100% is for the full color. </li>
+    <li>When color is fully saturated, the color is considered in the purest/truest version.</li>
+    <li>Lightness is the color space’s brightness. 0% is for black, and 100% is for white.</li>
+
+    <li><strong>Syntax:</strong></li>
+    hsl (hue, saturation, lightness) <br>
+    // example <br>
+    h1{ <br>
+    color:hsl(0, 100%, 50%); <br>
+    }
+
+    <h2>HSLA Color Values:</h2>
+    <li>HSLA color values are extensions Of HSL color values, with an Alpha Channel added. Where Alpha denotes the
+        Opacity of a colorHSLA color values are extensions Of HSL color values, with an Alpha Channel added. Where Alpha
+        denotes the Opacity of a color</li>
+    <li><strong>Syntax:</strong></li>
+    hsla ( hue, saturation, lightness, alpha) <br>
+    //example <br>
+    h1{ <br>
+    color:hsla(9, 100%, 64%, 0.8); <br>
+    }
+
+
+
+
+</body>
+
+</html>

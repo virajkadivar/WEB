@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">HTML Entities</h1>
+    <li>HTML Entity provides some methods to display reserved characters.</li>
+    <li>Reserved characters are those characters that are either reserved for HTML or those that are not present in the
+        basic keyboard.</li>
+    <li>For instance, ‘&lt;‘ is reserved in HTML language. </li>
+    <li>With this, if the less than (&lt;) or greater than (>) signs are used in the code, it might be possible that the
+        browser may think as a tag.</li>
+    <br>
+    <li>Sometimes this character needs to be displayed on the web page which creates ambiguity in the code. </li>
+    <li>Along with these are the characters that are normally not present in basic keyboards ( £, ¥, €, © ), etc.</li>
+    <li>HTML provides some Entity names and Entity numbers to use these symbols. Entity names are case-sensitive. Entity
+        numbers are easy to learn. </li>
+
+    <li><strong>Syntax </strong>&entity_name; or & #entity_number;</li>
+    <li><strong>Note:</strong> Entity names are case-sensitive.</li>
+
+    <h3>Entity Name and Entity Number</h3>
+    <li>Some useful Symbols with their Entity name and Entity numbers are listed below:</li>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Notation
+                </th>
+                <th>Symbols
+                </th>
+                <th>Entity name
+                </th>
+                <th>Entity Number
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>non-breaking space</td>
+                <td>&amp;nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><span>&lt;</td>
+                <td><span>less than</td>
+                <td><span>&amp;lt;></td>
+                <td><span>&lt;</td>
+            </tr>
+            <tr>
+                <td><span>®</td>
+                <td><span>registered trademark</td>
+                <td><span>&amp;reg;</td>
+                <td><span>®</td>
+            </tr>
+            <tr>
+                <td>©</span></td>
+                <td>copyright</span></td>
+                <td>&amp;copy;</span></td>
+                <td>©</span></td>
+            </tr>
+            <tr>
+                <td><span>€</span></td>
+                <td><span>euro</span></td>
+                <td><span>&amp;euro;</span></td>
+                <td><span>€</span></td>
+            </tr>
+            <tr>
+                <td><span>¥</span></td>
+                <td><span>yen</span></td>
+                <td><span>&amp;yen;</span></td>
+                <td><span>¥</span></td>
+            </tr>
+            <tr>
+                <td><span>£</span></td>
+                <td><span>pound</span></td>
+                <td><span>&amp;pound;</span></td>
+                <td><span>£</span></td>
+            </tr>
+            <tr>
+                <td><span>¢</span></td>
+                <td><span>cent</span></td>
+                <td><span>&amp;cent;</span></td>
+                <td><span>¢</span></td>
+            </tr>
+            <tr>
+                <td><span>“</span></td>
+                <td><span>double quotation mark</span></td>
+                <td><span>&amp;quot;</span></td>
+                <td><span>“</span></td>
+            </tr>
+            <tr>
+                <td><span>&amp;</span></td>
+                <td><span>ampersand</span></td>
+                <td><span>&amp;amp;</span></td>
+                <td><span>&amp;</span></td>
+            </tr>
+            <tr>
+                <td><span>&gt;</span></td>
+                <td><span>greater than</span></td>
+                <td><span>&amp;gt;</span></td>
+                <td><span>&gt;</span></td>
+            </tr>
+            <tr>
+                <td><span>∂</span></td>
+                <td><span>PARTIAL DIFFERENTIAL</span></td>
+                <td><span>&amp;part;</span></td>
+                <td><span>∂</span></td>
+            </tr>
+            <tr>
+                <td><span>∃</span></td>
+                <td><span>THERE EXISTS</span></td>
+                <td><span>&amp;exist;</span></td>
+                <td><span>∃</span></td>
+            </tr>
+            <tr>
+                <td><span>∅</span></td>
+                <td><span>EMPTY SETS</span></td>
+                <td><span>&amp;empty;</span></td>
+                <td><span>∅</span></td>
+            </tr>
+            <tr>
+                <td><span>∇</span></td>
+                <td><span>NABLA</span></td>
+                <td><span>&amp;nabla;</span></td>
+                <td><span>∇</span></td>
+            </tr>
+            <tr>
+                <td><span>∈</span></td>
+                <td><span>ELEMENT OF</span></td>
+                <td><span>&amp;isin;</span></td>
+                <td><span>∈</span></td>
+            </tr>
+            <tr>
+                <td><span>∉</span></td>
+                <td><span>NOT AN ELEMENT OF</span></td>
+                <td><span>&amp;notin;</span></td>
+                <td><span>∉</span></td>
+            </tr>
+            <tr>
+                <td><span>+</span></td>
+                <td><span>PLUS SIGN</span></td>
+                <td><span>&amp;plus;</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td><span>∏</span></td>
+                <td><span>N-ARY PRODUCT</span></td>
+                <td><span>&amp;prod;</span></td>
+                <td><span>∏</span></td>
+            </tr>
+            <tr>
+                <td><span>∑</span></td>
+                <td><span>N-ARY SUMMATION</span></td>
+                <td><span>&amp;sum;</span></td>
+                <td><span>∑</span></td>
+            </tr>
+            <tr>
+                <td><span>Α</span></td>
+                <td><span>Alpha</span></td>
+                <td><span>&amp;Alpha;</span></td>
+                <td><span>Α</span></td>
+            </tr>
+            <tr>
+                <td><span>Β</span></td>
+                <td><span>Beta</span></td>
+                <td><span>&amp;Beta;</span></td>
+                <td><span>Β</span></td>
+            </tr>
+            <tr>
+                <td><span>Γ</span></td>
+                <td><span>Gamma</span></td>
+                <td><span>&amp;Gamma;</span></td>
+                <td><span>Γ</span></td>
+            </tr>
+            <tr>
+                <td><span>Δ</span></td>
+                <td><span>delta</span></td>
+                <td><span>&amp;Delta;</span></td>
+                <td><span>Δ</span></td>
+            </tr>
+            <tr>
+                <td><span>Ε</span></td>
+                <td><span>Epsilon</span></td>
+                <td><span>&amp;Epsilon;</span></td>
+                <td><span>Ε</span></td>
+            </tr>
+            <tr>
+                <td><span>Ζ</span></td>
+                <td><span>Zeta</span></td>
+                <td><span>&amp;Zeta;</span></td>
+                <td><span>Ζ</span></td>
+            </tr>
+            <tr>
+                <td><span>♥</span></td>
+                <td><span>BLACK HEART SUIT = valentine</span></td>
+                <td><span>&amp;hearts;</span></td>
+                <td><span>♥</span></td>
+            </tr>
+            <tr>
+                <td><span>♣</span></td>
+                <td><span>BLACK CLUB SUIT = shamrock</span></td>
+                <td><span>&amp;clubs;</span></td>
+                <td><span>♣</span></td>
+            </tr>
+            <tr>
+                <td><span>♠</span></td>
+                <td><span>BLACK SPADE SUIT</span></td>
+                <td><span>&amp;spades;</span></td>
+                <td><span>♠</span></td>
+            </tr>
+            <tr>
+                <td><span>↓</span></td>
+                <td><span>DOWNWARDS ARROW</span></td>
+                <td><span>&amp;darr;</span></td>
+                <td><span>↓</span></td>
+            </tr>
+            <tr>
+                <td><span>→</span></td>
+                <td><span>RIGHTWARDS ARROW</span></td>
+                <td><span>&amp;rarr;</span></td>
+                <td><span>→</span></td>
+            </tr>
+            <tr>
+                <td><span>↑</span></td>
+                <td><span>UPWARDS ARROW</span></td>
+                <td><span>&amp;uarr;</span></td>
+                <td><span>↑</span></td>
+            </tr>
+            <tr>
+                <td><span>←</span></td>
+                <td><span>LEFTWARDS ARROW</span></td>
+                <td><span>&amp;larr;</span></td>
+                <td><span>←</span></td>
+            </tr>
+            <tr>
+                <td><span>™</span></td>
+                <td><span>TRADEMARK</span></td>
+                <td><span>&amp;trade;</span></td>
+                <td><span>™</span></td>
+            </tr>
+            <tr>
+                <td><span>♦</span></td>
+                <td><span>BLACK DIAMOND SUIT</span></td>
+                <td><span>♦</span></td>
+                <td><span>♦</span></td>
+            </tr>
+            <tr>
+                <td><span>°</span></td>
+                <td><span>degree</span></td>
+                <td><span>&amp;deg;</span></td>
+                <td><span>°</span></td>
+            </tr>
+            <tr>
+                <td><span>∞</span></td>
+                <td><span>infinity</span></td>
+                <td><span>&amp;infin;</span></td>
+                <td><span>∞</span></td>
+            </tr>
+            <tr>
+                <td><span>‰</span></td>
+                <td><span>per-mille</span></td>
+                <td><span>&amp;permil;</span></td>
+                <td><span>‰</span></td>
+            </tr>
+            <tr>
+                <td><span>⋅</span></td>
+                <td><span>dot operator</span></td>
+                <td><span>&amp;sdot;</span></td>
+                <td><span>⋅</span></td>
+            </tr>
+            <tr>
+                <td><span>±</span></td>
+                <td><span>plus-minus</span></td>
+                <td><span>&amp;plusmn;</span></td>
+                <td><span>±</span></td>
+            </tr>
+            <tr>
+                <td><span>†</span></td>
+                <td><span>hermitian</span></td>
+                <td><span>&amp;hercon;</span></td>
+                <td><span>⊹</span></td>
+            </tr>
+            <tr>
+                <td><span>–</span></td>
+                <td><span>minus sign</span></td>
+                <td><span>&amp;minus;</span></td>
+                <td><span>−</span></td>
+            </tr>
+            <tr>
+                <td><span>¬</span></td>
+                <td><span>–</span></td>
+                <td><span>&amp;not;</span></td>
+                <td><span>¬</span></td>
+            </tr>
+            <tr>
+                <td><span>%</span></td>
+                <td><span>percent sign</span></td>
+                <td><span>&amp;percent;</span></td>
+                <td><span>%</span></td>
+            </tr>
+            <tr>
+                <td><span>f</span></td>
+                <td><span>Function</span></td>
+                <td><span>&amp;fnof;</span></td>
+                <td><span>ƒ</span></td>
+            </tr>
+            <tr>
+                <td><span>∥</span></td>
+                <td><span>parallel</span></td>
+                <td><span>&amp;parallel;</span></td>
+                <td><span>∥</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Reserved Characters</h3>
+    <li>These characters are either reserved for HTML or those which are not present in the basic keyboard & can't use
+        them directly.</li>
+    <li>Some of the reserved characters representations are given below:</li>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    <h4><span>Reserved Character</span></h4>
+                </th>
+                <th>
+                    <h4><span>Entity Name</span></h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span>&amp;</span></td>
+                <td><span>&amp;amp;</span></td>
+            </tr>
+            <tr>
+                <td><span>&lt;</span></td>
+                <td><span>&amp;lt;</span></td>
+            </tr>
+            <tr>
+                <td><span>&gt;</span></td>
+                <td><span>&amp;gt;</span></td>
+            </tr>
+            <tr>
+                <td><span>“</span></td>
+                <td><span>&amp;quot;</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Other Characters</h3>
+    <li>Some characters that aren’t available directly on our keyboard, therefore such an entity can be used to
+        represent it by using their entity number. </li>
+    <li> These keywords are directly not available to type, we need to specify their entity number.</li>
+    <li>Here #x before the numbers represents the hexadecimal representation.</li>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    <h4><span>Character</span></h4>
+                </th>
+                <th>
+                    <h4><span>Entities</span></h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p><span>≥</span></p>
+
+                </td>
+                <td>
+                    <p><span>&amp;GreaterEqual;</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>©</span></p>
+
+                </td>
+                <td>
+                    <p><span>&amp;copy;&nbsp;</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>€</span></p>
+
+                </td>
+                <td>
+                    <p><span>&amp;euro; &nbsp;</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>∃</span></p>
+
+                </td>
+                <td>
+                    <p><span>&amp;exist;</span></p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <h3>Advantages and Disadvantages of HTML Entity</h3>
+    <h4>Advantages</h4>
+    <li>Entity names can be easy to remember.</li>
+    <h4>Disadvantages</h4>
+    <li>Browsers might not support all the entity names, instead, they can support the use of entity numbers.</li>
+
+    <h3>Non-breaking Space</h3>
+    <li>It is used to provide space that will not break into a new line. This HTML entity is represented by
+        <em>&amp;nbsp; </em> that will separate the 2 words & will stick together without breaking it into a new line.
+    </li>
+    <li>We can also use the non-breaking space for preventing the browsers from truncating spaces in HTML pages. </li>
+    <li>The non-breaking hyphen (‑) is used to define a hyphen character (‑) that does not break into a new line.</li>
+
+    <h3>Combining Diacritical Marks</h3>
+    <li>A diacritical mark is a “glyph” added to a letter. Diacritical marks like grave ( ` ̀) and acute ( ́ ) are
+        called accents. </li>
+    <li> It can appear both above and below a letter, inside a letter, and between two letters. </li>
+    <li>Diacritical marks can be used in combination with alphanumeric characters to generate a character that is not
+        present in the character set (encoding) used on the page. </li>
+
+
+    <table border="1" style="text-align: center;">
+        <thead>
+            <tr>
+                <th>
+                    <h4><span>Symbols</span></h4>
+                </th>
+                <th>
+                    <h4><span>Character</span></h4>
+                </th>
+                <th>
+                    <h4><b><strong>Construct</strong></b></h4>
+                </th>
+                <th>
+                    <h4><span>Final Result</span></h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p><span>&nbsp;̀</span></p>
+
+                </td>
+                <td>
+                    <p><span>a</span></p>
+
+                </td>
+                <td><span>à</span></td>
+                <td>
+                    <p><span>à</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>&nbsp;́</span></p>
+
+                </td>
+                <td>
+                    <p><span>a</span></p>
+
+                </td>
+                <td><span>á</span></td>
+                <td>
+                    <p><span>á</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>̂</span></p>
+
+                </td>
+                <td>
+                    <p><span>a</span></p>
+
+                </td>
+                <td><span>â</span></td>
+                <td>
+                    <p><span>â</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>&nbsp;̃</span></p>
+
+                </td>
+                <td>
+                    <p><span>a</span></p>
+
+                </td>
+                <td><span>ã</span></td>
+                <td>
+                    <p><span>ã</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>&nbsp;̀</span></p>
+
+                </td>
+                <td>
+                    <p><span>O</span></p>
+
+                </td>
+                <td><span>Ò</span></td>
+                <td>
+                    <p><span>Ò</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>&nbsp;́</span></p>
+
+                </td>
+                <td>
+                    <p><span>O</span></p>
+
+                </td>
+                <td><span>Ó</span></td>
+                <td>
+                    <p><span>Ó</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>̂</span></p>
+
+                </td>
+                <td>
+                    <p><span>O</span></p>
+
+                </td>
+                <td><span>Ô</span></td>
+                <td>
+                    <p><span>Ô</span></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span>&nbsp;̃</span></p>
+
+                </td>
+                <td>
+                    <p><span>O</span></p>
+
+                </td>
+                <td><span>Õ</span></td>
+                <td>
+                    <p><span>Õ</span></p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+
+</html>

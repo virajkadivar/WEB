@@ -1,0 +1,5 @@
+What are HTML tags ?
+HTML tags are the keywords that are used to produce web pages in various formats. 
+Opening tags and closing tags are found in the majority of tags. 
+The concluding tags contain a forward slash (/), while the language of the beginning tags is the same. 
+Certain tags don’t need to be closed.

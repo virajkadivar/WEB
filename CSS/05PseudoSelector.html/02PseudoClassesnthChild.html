@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        /* tr:nth-child(even){
+            background-color: grey;
+        } */
+        /* tr:nth-child(odd){
+            background-color: grey;
+        } */
+        /* tr:nth-child(4n){
+            background-color: grey;
+        } */
+        /* tr:nth-child(4n+1){
+            background-color: grey;
+        } */
+        /* tr:nth-child(4n+2){
+            background-color: grey;
+        } */
+        tr:nth-child(2n){ background-color: grey; }
+        tr:nth-child(3n){ background-color: rgb(201, 50, 50); }
+        tr:nth-child(4n){ background-color: rgb(8, 63, 119); }
+        tr:nth-child(5n){ background-color: rgb(6, 83, 62); }
+        tr:nth-child(6n){ background-color: rgb(104, 116, 26); }
+        input:required {
+  background-color: yellow;
+}
+
+    </style>
+    <table>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+    <form action="">
+
+        <input type="text" value="" name="readonly" id="" required>
+        <input type="text" value="mail@mail.com" readonly name="readonly" id="" >
+        <input type="text" value="mail@mail.com" disabled name="disabled" id="">
+        <input type="submit" value="save" name="btn" id="">
+    </form> -->
+
+    <h2> (1) :nth-child() Selector</h2>
+    <p>The :nth-child() CSS pseudo-class selector is used to match the elements based on their position in a group of siblings. It matches every element that is the nth-child, regardless of the type, of its parent. <br>Syntax::nth-child(number) {
+        // CSS Property
+    }</p>
+    <h3>Example</h3>
+    <p><head>
+        <style> 
+        /* Selects the second element of div siblings */
+        div:nth-of-type(even) {
+          background: red;
+        }
+        
+        /* Selects the second li element in a list */
+        li:nth-of-type(odd) {
+          background: lightgreen;
+        }
+        
+        /* Selects every third element among any group of siblings */
+        :nth-of-type(4) {
+          background: yellow;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div>
+        <p>This is some text.</p>
+        </div>
+        
+        <div>
+        <p>This is some text.</p>
+        </div>
+        
+        <div>
+        <p>This is some text.</p>
+        </div>
+        
+        <ul>
+          <li>First list item</li>
+          <li>Second list item</li>
+          <li>Third list item</li>
+          <li>Fourth list item</li>
+          <li>Fifth list item</li>
+        </ul>
+        </p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <style>
+        li::after{ content: "!!"; }
+        li::before{ content: "~"; }
+        p::selection{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas, perspiciatis numquam error accusamus voluptate, quidem, dolore ab quasi vitae ullam. Facilis explicabo ipsum culpa obcaecati, modi itaque autem est.</p>
+
+    <ul>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+    </ul>
+     -->
+     <h2> (1) ::after Selector</h2>
+     <p>CSS Pseudo Elements lets you style a specific part of the selected elements. For Example, Styling the first letter or line of an element, and Inserting content before or after the content of an element. All of these can be done using Pseudo Elements in CSS. <br> Syntax <br>
+        ::after {
+            css declarations;
+          }</p>
+          <h3>Example</h3>
+          <style>
+            p::after { 
+              content: " - Remember this";
+              background-color: rgb(0, 255, 136);
+              color: red;
+              font-weight: bold;
+            }
+            </style>
+            </head>
+            <body>
+        
+            <p>My name is Donald</p>
+            <p>I live in Ducksburg</p>
+            <h2> (2) ::before Selector</h2>
+            <p>The ::before selector, is used to add the same content multiple times before the content of other elements. This selector is the same as ::after selector. It helps to create the pseudo-element that represents the first child of the selected element & is generally used for adding decorative content to an element using the content property. Its default value is inline.</p>
+            Syntax <br> ::before {
+                css declarations;
+              }
+              <h3>Example</h3>
+              <style>
+                p::before { 
+                  content: "Read this -";
+                  background-color: yellow;
+                  color: red;
+                  font-weight: bold;
+                }
+                </style>
+                </head>
+                <body>
+                
+             
+                
+                <p>My name is Donald</p>
+                <p>I live in Ducksburg</p>
+</body>
+</html>

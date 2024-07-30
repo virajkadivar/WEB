@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h3>All CSS Pseudo Classes</h3>
+    <table class="ws-table-all notranslate">
+        <tbody>
+            <tr>
+                <th style="width:20%">Selector</th>
+                <th style="width:20%">Example</th>
+                <th>Example description</th>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_active.asp">:active</a></td>
+                <td class="notranslate">a:active</td>
+                <td>Selects the active link</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_checked.asp">:checked</a></td>
+                <td class="notranslate">input:checked</td>
+                <td>Selects every checked &lt;input&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_disabled.asp">:disabled</a></td>
+                <td class="notranslate">input:disabled</td>
+                <td>Selects every disabled &lt;input&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_empty.asp">:empty</a></td>
+                <td class="notranslate">p:empty</td>
+                <td>Selects every &lt;p&gt; element that has no children</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_enabled.asp">:enabled</a></td>
+                <td class="notranslate">input:enabled</td>
+                <td>Selects every enabled &lt;input&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_firstchild.asp">:first-child</a></td>
+                <td class="notranslate">p:first-child</td>
+                <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_first-of-type.asp">:first-of-type</a></td>
+                <td class="notranslate">p:first-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_focus.asp">:focus</a></td>
+                <td class="notranslate">input:focus</td>
+                <td>Selects the &lt;input&gt; element that has focus</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_hover.asp">:hover</a></td>
+                <td class="notranslate">a:hover</td>
+                <td>Selects links on mouse over</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_in-range.asp">:in-range</a></td>
+                <td class="notranslate">input:in-range</td>
+                <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_invalid.asp">:invalid</a></td>
+                <td class="notranslate">input:invalid</td>
+                <td>Selects all &lt;input&gt; elements with an invalid value</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_lang.asp">:lang(<i>language</i>)</a></td>
+                <td class="notranslate">p:lang(it)</td>
+                <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_last-child.asp">:last-child</a></td>
+                <td class="notranslate">p:last-child</td>
+                <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_last-of-type.asp">:last-of-type</a></td>
+                <td class="notranslate">p:last-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_link.asp">:link</a></td>
+                <td class="notranslate">a:link</td>
+                <td>Selects all unvisited links</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_not.asp">:not(selector)</a></td>
+                <td class="notranslate">:not(p)</td>
+                <td>Selects every element that is not a &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-child.asp">:nth-child(n)</a></td>
+                <td class="notranslate">p:nth-child(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-last-child.asp">:nth-last-child(n)</a></td>
+                <td class="notranslate">p:nth-last-child(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-last-of-type.asp">:nth-last-of-type(n)</a></td>
+                <td class="notranslate">p:nth-last-of-type(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from
+                    the last child</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-of-type.asp">:nth-of-type(n)</a></td>
+                <td class="notranslate">p:nth-of-type(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_only-of-type.asp">:only-of-type</a></td>
+                <td class="notranslate">p:only-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_only-child.asp">:only-child</a></td>
+                <td class="notranslate">p:only-child</td>
+                <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_optional.asp">:optional</a></td>
+                <td class="notranslate">input:optional</td>
+                <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_out-of-range.asp">:out-of-range</a></td>
+                <td class="notranslate">input:out-of-range</td>
+                <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_read-only.asp">:read-only</a></td>
+                <td class="notranslate">input:read-only</td>
+                <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_read-write.asp">:read-write</a></td>
+                <td class="notranslate">input:read-write</td>
+                <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_required.asp">:required</a></td>
+                <td class="notranslate">input:required</td>
+                <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_root.asp">:root</a></td>
+                <td class="notranslate">root</td>
+                <td>Selects the document's root element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_target.asp">:target</a></td>
+                <td class="notranslate">#news:target</td>
+                <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_valid.asp">:valid</a></td>
+                <td class="notranslate">input:valid</td>
+                <td>Selects all &lt;input&gt; elements with a valid value</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_visited.asp">:visited</a></td>
+                <td class="notranslate">a:visited</td>
+                <td>Selects all visited links</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        /* a{ color: burlywood; } */
+        a:active {
+            color: rgb(10, 48, 85);
+        }
+
+        a:visited {
+            color: rgb(116, 98, 75);
+        }
+
+        /* input:checked {
+         background-color: brown;   
+        } */
+
+        input[type=checkbox]:checked {
+            /* background-color: #FA9E57; */
+            accent-color: rgb(116, 98, 75);
+        }
+
+        input[type="checkbox" i] {
+            background-color: initial;
+            cursor: default;
+            appearance: auto;
+            box-sizing: border-box;
+            margin: 10px 10px 10px 10px;
+            padding: initial;
+            border: initial;
+        }
+        input[type="text" i]:disabled{
+            background-color: yellowgreen;
+        }
+        .valid:empty{border: 1px solid red; height: 20px;  text-transform: uppercase;}
+        p::first-letter{ font-size: 36px; }
+        p::first-line{ color: grey; }
+        input:focus{ outline: 2px solid green; } 
+        input:hover{  background-color: brown; } 
+        p{ text-transform: capitalize;} 
+    </style>
+    <a href="#">Click</a>
+    <a href="https://www.w3schools.com/">Google</a>
+
+    <input type="checkbox" name="" id="">
+    <input type="text" disabled name="" id="">
+    <input type="text" name="" id="">
+    <div class="valid" >
+
+    </div>
+    <div class="valid" contenteditable=""></div>
+    <div class="valid">this</div> -->
+    
+
+    <h2> (1) :active Selector</h2>
+    <p>This pseudo-class is used to select an element that is activated when the user clicks on it. The following example demonstrates that when you click on the box, its background color changes for a moment. <br>Syntax 
+        :active {
+            css declarations;
+          }
+          <h3>Example</h3>
+          <!DOCTYPE html>
+<html>
+<head>
+<style>
+p:active, h1:active, a:active{
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div class="intro">
+  <h2 id="firstname">My name is Donald</h2>
+  <p id="hometown">I live in Duckburg</p>
+  <p>My <b>best</b> friend is Mickey</p>
+</div>
+
+<h2>Links:</h2>
+<p>Here are my favorite websites:</p>
+<a hrefhttps://www.google.com/>google</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+<p><b>Note:</b> Click on the paragraphs, headers, and links to see what is getting a style.</p>
+
+</body>
+</html>
+     </p>
+    
+
+    <h2> (2) :checked Selector</h2>
+    <p>The :checked selector matches every checked <input>  element (only for radio buttons and checkboxes) and <option> element. <br> Syntax  :checked { 
+        css declarations};</p>
+        <h3>Example</h3>
+        <!DOCTYPE html>
+<html>
+<head>
+<style> 
+option:checked {
+  height: 100px;
+  width: 100px;
+}
+</style>
+</head>
+<body>
+
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+    <h2> (3) :visited Selector</h2>
+    <p>The :visited selector in CSS is used to select the visited links. For example, visit some link on the website and again see it, then it will find the changed color of that link. This change in color is done by :visited the selector//=:visited - This pseudo-class styles links that have been visited. <br> Syntax:  <br> :visited {
+        // CSS Properties
+    }</p>
+    <h3>Example</h3>
+    <head>
+        <style>
+    a:visited {
+        color: red;
+      }
+      </style>
+      </head>
+      <body>
+
+      <p>The :visited selector style links to pages you have already visited:</p>
+      <a href="https://www.google.com/search?q=gujarati+to+english&rlz=1C1UEAD_enIN1006IN1006&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMg8IBBAuGCcYxwEY6gIY0QMyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkyOTkxajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">Home</a><br>
+      <a href=https://www.google.com/search?q=whatsapp+web&rlz=1C1UEAD_enIN1006IN1006&oq=what&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDkyDggBEEUYJxg7GIAEGIoFMhQIAhBFGDsYQxiDARixAxiABBiKBTINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDIKCAYQABixAxiABDINCAcQABiDARixAxiABDIHCAgQABiABDINCAkQABiDARixAxiABNIBCTM1OTFqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8>whatsapp Web </a><br>
+      <h2> (4) :disabled Selector</h2>
+      <p>The :disabled pseudo-class selector provides conditional styling to HTML elements that can receive user input, when the elements have the disabled attribute. <br>Syntax: <br>:disabled {
+        // CSS property
+    } </p>
+      <h3>Example</h3>
+      <head>
+        <style> 
+        input[type=text]:enabled {
+          background: red;
+        }
+        
+        input[type=text]:disabled {
+          background: yellow;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <form action="">
+          First name: <input type="text" value="jaydeep"><br>
+          Last name: <input type="text" value="swaminarayan"><br>
+          Country: <input type="text" disabled="disabled" value="Disneyland">
+        </form>
+</body>
+</html>

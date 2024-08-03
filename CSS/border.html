@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            /* border-style: solid;
+            border-width: 5px;
+            border-color: orange; */
+            border: orange 5px solid;
+        }
+
+        .border-none {
+            border: 10px none teal;
+        }
+
+        .border-hidden {
+            border: 10px hidden teal;
+        }
+
+        .border-dotted {
+            border: 10px dotted teal;
+        }
+
+        .border-dashed {
+            border: 10px dashed teal;
+        }
+
+        .border-solid {
+            border: 10px solid teal;
+        }
+
+        .border-double {
+            border: 10px double teal;
+        }
+
+        .border-groove {
+            border: 10px groove teal;
+        }
+
+        .border-ridge {
+            border: 10px ridge teal;
+        }
+
+        .border-inset {
+            border: 10px inset teal;
+        }
+
+        .border-outset {
+            border: 10px outset teal;
+        }
+
+        /* div[class*="border"]{ height: 150px; margin: 10px; } */
+        div[class*="border"] {
+            height: 100px;
+            margin: 10px;
+            font-size: 36px;
+        }
+
+        .diff-border {
+            border-left: 5px solid red;
+            border-bottom: 15px solid rgb(0, 255, 251);
+            border-top: 10px solid rgb(136, 0, 255);
+        }
+
+        .leaf {
+            /* border-radius: 20%; */
+            display: inline-block;
+            border-radius: 0% 80%;
+        }
+
+        .leaf-right {
+            /* border-radius: 20%; */
+            display: inline-block;
+            border-radius: 80% 0%;
+        }
+
+        .radius {
+            border-radius: 10px 50px 90px 100px;
+            display: inline-block;
+        }
+
+        .round {
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        /* .border-none,.border-hidden,.border-dotted,.border-dashed,.border-solid,.border-double,.border-groove,.border-ridge,.border-inset,.border-outset{
+            height: 100px;
+        } */
+
+        .border-img {
+            /* border-image: url(border-image-6.svg) 30 round ; */
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border-image-6.svg) 50 round;
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-img"> data </div>
+
+    <div class="diff-border"></div>
+    <label class="box leaf"></label>
+    <label class="box leaf-right"></label>
+    <label class="box radius"></label>
+    <label class="box round"></label>
+    <ol>
+        <li> border-width</li>
+        <li> border-style (required)</li>
+        <li> border-color</li>
+        <li> border</li>
+    </ol>
+    <div class="box"></div>
+
+    border-style: none;
+    border-style: hidden;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+
+    /* top and bottom | left and right */
+    border-style: dotted solid;
+
+    /* top | left and right | bottom */
+    border-style: hidden double dashed;
+
+    /* top | right | bottom | left */
+    border-style: none solid dotted dashed;
+
+    /* Global values */
+    border-style: inherit;
+    border-style: initial;
+    border-style: revert;
+    border-style: revert-layer;
+    border-style: unset;
+
+
+    <div class="border-none">border-none</div>
+    <div class="border-hidden">border-hidden</div>
+    <div class="border-dotted">border-dotted</div>
+    <div class="border-dashed">border-dashed</div>
+    <div class="border-solid">border-solid</div>
+    <div class="border-double">border-double</div>
+    <div class="border-groove">border-groove</div>
+    <div class="border-ridge">border-ridge</div>
+    <div class="border-inset">border-inset</div>
+    <div class="border-outset">border-outset</div>
+    <h1> border</h1>
+    <p>CSS borders are essential elements in websites, representing the edges of various components and elements. CSS Borders refer to the lines that surround elements, defining their edges. Borders can be styled, colored, and sized using CSS properties such as border style, border color, border width, and border radius. borders can be styled with the top border, the right border, the bottom border, and the left border. </p>
+</body>
+</html>

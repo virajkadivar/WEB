@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0;padding: 0; box-sizing: border-box; }
+        div[class*="col"]{ height: 200px;width: 200px; border: 1px solid rgb(62, 244, 211); }
+        .row{ display:flex; width: 800px; background-color: brown; margin:auto; }
+        .col-1{ background-color:red ; padding:50px ; }
+        .col-2{ background-color: green; padding:70px ; }
+        .col-3{ background-color:blue ; padding: 90px; }
+        .col-4{ background-color: teal ; padding: 150px; }
+  </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">col1</div>
+        <div class="col-2">col2</div>
+        <div class="col-3">col3</div>
+        <div class="col-4">col4</div>
+    </div>
+<h2> (1) box-sizing Property</h2>
+<p>The box-sizing property in CSS defines how the user should calculate the total width and height of an element i.e padding and borders, are to be included or not. <br>Syntax: <br> box-sizing: content-box|border-box;</p>
+</body>
+</html>

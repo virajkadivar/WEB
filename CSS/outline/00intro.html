@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            margin: 20px;
+            /* outline-style: solid;
+            outline-width: 5px;
+            outline-color: orange; */
+            outline: orange 5px solid;
+        }
+
+        .outline-none {
+            outline: 10px none teal;
+        }
+
+        .outline-hidden {
+            outline: 10px hidden teal;
+        }
+
+        .outline-dotted {
+            outline: 10px dotted teal;
+        }
+
+        .outline-dashed {
+            outline: 10px dashed teal;
+        }
+
+        .outline-solid {
+            outline: 10px solid teal;
+        }
+
+        .outline-double {
+            outline: 10px double teal;
+        }
+
+        .outline-groove {
+            outline: 10px groove teal;
+        }
+
+        .outline-ridge {
+            outline: 10px ridge teal;
+        }
+
+        .outline-inset {
+            outline: 10px inset teal;
+        }
+
+        .outline-outset {
+            outline: 10px outset teal;
+        }
+
+        /* div[class*="outline"]{ height: 150px; margin: 10px; } */
+        div[class*="outline-"] {
+            height: 100px;
+            margin: 50px;
+            font-size: 36px;
+        }
+
+        .leaf {
+            /* outline-radius: 20%; */
+            display: inline-block;
+            /* outline-radius: 0% 80%; */
+        }
+
+        .leaf-right {
+            /* outline-radius: 20%; */
+            display: inline-block;
+            /* outline-radius: 80% 0%; */
+        }
+
+        .radius {
+            /* outline-radius: 10px 50px 90px 100px; */
+            display: inline-block;
+        }
+
+        .round {
+            display: inline-block;
+            /* outline-radius: 50%; */
+        }
+
+        /* .outline-none,.outline-hidden,.outline-dotted,.outline-dashed,.outline-solid,.outline-double,.outline-groove,.outline-ridge,.outline-inset,.outline-outset{
+            height: 100px;
+        } */
+
+        .outline-img {
+            /* outline-image: url(outline-image-6.svg) 30 round ; */
+            outline: 10px solid transparent;
+            padding: 15px;
+            /* outline-image: url(outline-image-6.svg) 50 round; */
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outline-img"> data </div>
+
+    <div class="diff-outline"></div>
+    <label class="box leaf"></label>
+    <label class="box leaf-right"></label>
+    <label class="box radius"></label>
+    <label class="box round"></label>
+    <ol>
+        <li> outline-width</li>
+        <li> outline-style (required)</li>
+        <li> outline-color</li>
+        <li> outline</li>
+    </ol>
+    <div class="box"></div>
+    
+    outline-style: none;<br>
+    outline-style: hidden;<br>
+    outline-style: dotted;<br>
+    outline-style: dashed;<br>
+    outline-style: solid;<br>
+    outline-style: double;<br>
+    outline-style: groove;<br>
+    outline-style: ridge;<br>
+    outline-style: inset;<br>
+    outline-style: outset;<br>
+
+    /* top and bottom | left and right */
+    outline-style: dotted solid;
+
+    /* top | left and right | bottom */
+    outline-style: hidden double dashed;
+
+    /* top | right | bottom | left */
+    outline-style: none solid dotted dashed;
+
+    /* Global values */
+    outline-style: inherit;
+    outline-style: initial;
+    outline-style: revert;
+    outline-style: revert-layer;
+    outline-style: unset;
+
+
+    <div class="outline-none">outline-none</div>
+    <div class="outline-hidden">outline-hidden</div>
+    <div class="outline-dotted">outline-dotted</div>
+    <div class="outline-dashed">outline-dashed</div>
+    <div class="outline-solid">outline-solid</div>
+    <div class="outline-double">outline-double</div>
+    <div class="outline-groove">outline-groove</div>
+    <div class="outline-ridge">outline-ridge</div>
+    <div class="outline-inset">outline-inset</div>
+    <div class="outline-outset">outline-outset</div>
+    <h2>outline:-</h2>
+    <p>CSS Outline allows drawing a line outside the border of elements. It is used to set all the properties of the outline in a single declaration.</p>
+    <p>An outline is a line that's drawn around an element, outside of its border, to make it stand out. Outlines can overlap other content and aren't part of an element's dimensions. They're similar to borders, but they always go around all sides of an element, and they aren't part of the box model, so they don't affect the position of the element or adjacent elements.</p>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+Q.What is CSS, and what does it stand for?
+CSS stands for Cascading Style Sheets. CSS styles web content aesthetically. CSS defines how the web elements should be displayed on a web page.
+
+Q.Explain the concept of "cascading" in Cascading Style Sheets and its significance.
+The concept of "cascading" in CSS describes how styles are applied based on source order, specificity, and importance. Cascading rules ensure that the most relevant style is applied to an element, resolving conflicts and maintaining design consistency.
+
+Q.What is CSS and what is its purpose?
+CSS, or Cascading Style Sheets, is a stylesheet language used for describing the look, formatting, and layout of documents written in HTML (Hypertext Markup Language) or XML (Extensible Markup Language). Its primary purpose is to separate the presentation and design of a web page from its content, making it easier to maintain, update and modify the visual appearance of a website.
+
+The main benefits of CSS include:
+
+Consistency: By using a single CSS file to control the styles for multiple pages, you can create a consistent look and feel across an entire website.
+Efficiency: CSS reduces code duplication and makes it easier to manage and update styles. This leads to faster page-load times and lower bandwidth usage.
+Modularity: With CSS, you can break courses down into modules that can be easily reused, combined, and updated independently of each other.
+Accessibility: CSS helps create accessible web pages by allowing developers to apply specific styles for different types of devices or user preferences.
+Flexibility: CSS offers a wide range of styling properties and techniques that can be used to achieve various effects, catering to diverse design requirements.
+
+Q.Explain the concept of specificity in CSS.
+The concept of specificity in CSS determines which styles will be applied to an element when there are conflicting rules. Specificity is calculated based on the selectors used in the CSS rules. It follows a specific hierarchy where inline styles have the highest specificity, followed by IDs, classes, and finally, element selectors.
+
+The more specific a selector is, the higher its specificity value. When multiple conflicting rules target the same element, the one with the highest specificity will take precedence.
+
+Q.How do you optimize CSS for better website performance?
+To optimize CSS for better website performance, you can follow these practices:
+
+Minify and compress CSS files to reduce their file size.
+Combine multiple CSS files into a single file to reduce HTTP requests.
+Use CSS sprites to combine small images into a single larger image and reduce the number of image requests.
+Avoid using inline styles and opt for external stylesheets.
+Use shorthand properties to reduce the amount of CSS code.
+Remove unused CSS to reduce the file size and improve loading speed.
+Avoid using complex selectors that can slow down the rendering process.
+Load CSS files asynchronously or defer their loading to prevent render-blocking.
+Implementing these optimizations can significantly improve the loading speed and overall performance of a website.
+
+Q.Explain the concept of CSS feature queries and how they can be used.
+CSS feature queries, also known as @supports rule, allow you to conditionally apply styles based on the browser's support for specific CSS features or properties. They provide a way to apply fallback styles or use new CSS features only when supported. Here's an example:
+
+@supports (display: grid) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+In this example, the styles within the @supports rule will be applied only if the browser supports the display: grid property. If not supported, the fallback styles defined outside the @supports rule will be used.
+
+Q.Differentiate between CSS3 and CSS2.
+The main difference between CSS3 and CSS2 is that CSS divides different sections into modules and supports many browsers. It also contains new General Sibling Combinators responsible for matching similar elements. Q.Explain a few advantages of CSS. 
+
+Q.What was the purpose of developing CSS?
+CSS was developed to define the visual appearances of websites. It allows developers to separate the structure and content of a website that was not possible before.
+
+Q.What are the limitations of CSS?
+CSS cannot always assure compatibility with every browser; you need to be cautious while choosing the style selector.
+The parent selector tag is not available, thus you can’t select the parent selector tag.
+Some selectors can lead to cross-browser issues due to their less browser-friendly behavior.
+We cannot request a webpage through CSS.
+
+Q.How to include CSS in the webpage?
+With the help of a link tag, you can include an external style sheet file as a CSS file into your HTML file.
+You can add CSS styles included within your HTML page and write it in the stand-alone stylesheet form of CSS.
+CSS can be included directly in the HTML tag by adding an inline style to HTML elements.
+One can import an external stylesheet file as a new CSS file by using the @import rule.
+
+Q.What is cascading in CSS?
+Cascading is defined as the process of style declaration and its weight that will help the browser in selecting the styling rules with respect to time.
+
+Q.What do CSS Custom properties variables mean?
+CSS Custom properties variables are defined for CSS variables as well as cascading variables with specific values that can be reused.
+
+Q.Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+No. The CSS file will be downloaded via browser in order to appear on the HTML page.
+
+Q.Tell us something about CSS3.
+CSS3 is divided into modules and is supported by almost every browser. Many graphics-related characteristics are introduced in CSS3 like box-shadow, Border-radius, and flexbox. A user can create precise multiple background images using properties like background-position, background-repeat, and background-image styles. 
+
+Q.What are the advantages of using CSS?
+The main advantages of CSS are given below:
+
+Separation of content from presentation - CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.
+Easy to maintain - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.
+Bandwidth - Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.
+
+Q.What are the limitations of CSS?
+Disadvantages of CSS are given below:
+
+Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is supported or not using the @support selector).
+Cross Browser issue: Some selectors behave differently in a different browser).
+There is no parent selector: Currently, Using CSS, you can’t select a parent tag.
+
+Q.What is CSS?
+Cascading Style Sheets fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages.
+
+More importantly, CSS enables you to do this independent of the HTML that makes up each web page. CSS is easy to learn and understood, but it provides powerful control over the presentation of an HTML document.
+
+Q.What are the advantages of using CSS?
+Below are some of the advantages of CSS-
+
+Multiple device compatibility
+
+Better website speed
+
+Easy to maintain
+
+Flexible positioning of design elements
+
+Offline Browsing
+
+Q.What are the limitations of CSS?
+Some of the limitations of CSS include difficulties adapting to a browser as different browsers tend to interpret the CSS differently, limited layout options, inability to generate dynamic content, inability to perform any logical operations, etc. 
+
+Q.What is cascading in CSS?
+Cascading is defined as the process of style declaration and its weight that will help the browser in selecting the styling rules with respect to time.
+
+Q.Why do we use CSS?
+e use CSS because of the following reasons:
+
+CSS saves time: You can write CSS once and reuse the same sheet on multiple HTML pages.
+Easy Maintenance: To make a global change simply change the style, and all elements in all the webpages will be updated automatically.
+Search Engines: CSS is considered a clean coding technique, which means search engines won’t have to struggle to “read” its content.
+Superior styles to HTML: CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.
+Offline Browsing: CSS can store web applications locally with the help of an offline cache. Using of this we can view offline websites.
+
+Q.What are the advantages of CSS?
+CSS plays an important role, by using CSS you simply got to specify a repeated style for an element once & use it multiple times because CSS will automatically apply the required styles.
+The main advantage of CSS is that style is applied consistently across a variety of sites. One instruction can control several areas which are advantageous.
+Web designers need to use a few lines of programming for every page improving site speed.
+Cascading sheet not only simplifies website development but also simplifies maintenance as a change of one line of code affects the whole website and maintenance time.
+It is less complex therefore the effort is significantly reduced.
+It helps to form spontaneous and consistent changes.
+CSS changes are device friendly. With people employing a batch of various range of smart devices to access websites over the web, there’s a requirement for responsive web design.
+It has the power for re-positioning. It helps us to determine the changes within the position of web elements that are there on the page.
+These bandwidth savings are substantial figures of insignificant tags that are indistinct from a mess of pages.
+Easy for the user to customize the online page
+It reduces the file transfer size.
+
+Q.What are the disadvantages of CSS?
+CSS, CSS 1 up to CSS3, result in creating confusion among web browsers.
+With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+There exists a scarcity of security.
+After making the changes we need to confirm the compatibility if they appear. A similar change affects all the browsers.
+The programing language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.
+Browser compatibility (some style sheets are supported and some are not).
+CSS works differently on different browsers. IE and Opera support CSS as different logic.
+There might be cross-browser issues while using CSS.
+There are multiple levels that create confusion for non-developers and beginners.
+
+Q.What is the current version of CSS?
+CSS3 is the latest version of CSS.
+
+Q.How is CSS different from CSS 3?
+CSS and CSS3 are not different versions of the same language, but rather, CSS3 is an extension of CSS2. While CSS2 focuses on style and layout, CSS3 includes new features like animations, transitions, transforms, and media queries, which allow for more advanced design and functionality. These features are not present in CSS2, making CSS3 a more powerful and flexible language for web design.

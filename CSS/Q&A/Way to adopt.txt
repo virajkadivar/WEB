@@ -1,0 +1,147 @@
+Q.How do you include CSS in an HTML document?
+Include CSS in an HTML document through inline styles using <style> tags or external style sheets linked using the <link> tag.
+
+Q.What are the different ways to apply CSS styles to HTML elements?
+CSS styles can be applied to HTML elements via inline styles, internal CSS with <style> tags, or external CSS files linked to the HTML document.
+
+Q.Explain the difference between inline, internal, and external CSS.
+Inline CSS applies styles directly within an HTML element's attribute. Internal CSS uses <style> tags within the HTML document's <head>. External CSS links a separate stylesheet file to the HTML document.
+
+Q.What are the different ways to include CSS in a web page?
+There are three main ways to include CSS in a web page:
+
+Inline CSS: Adding the style directly to an HTML element using the "style" attribute.
+Internal CSS: Placing the CSS code within the < style > tags in the < head > section of an HTML document.
+External CSS: Linking an external CSS file to the HTML document using the < link > tag in the < head > section.
+
+Q.How do you select an element with a specific class in CSS?
+To select an element with a specific class in CSS, you use the dot (.) followed by the class name. For example, to select all elements with the class "example-class", the CSS selector would be ".example-class".
+
+Q.How do you apply CSS styles inline?
+To apply CSS styles inline, you can use the ‘style’ attribute directly on an HTML element. Inline styles are written as part of the element's opening tag, and the CSS properties are defined within the ‘style’ attribute. Here's an example:
+
+<p style="font-size: 18px; color: red; font-weight: bold;">This paragraph has inline CSS styles applied to it.</p>
+In this example, the ‘< p >’ element has inline styles that set the font size to 18 pixels, the color to red, and the font weight to bold.
+
+Keeping in mind that inline styles have the highest specificity among all CSS selectors, meaning they will override any styles defined in an internal or external stylesheet unless the ‘!important’ flag is used in the other styles. However, using inline styles is generally not recommended as they can make your HTML code harder to maintain. It is better to use external or internal stylesheets when possible.
+
+Q.Explain the concept of CSS specificity and inheritance in the context of the !important rule.
+CSS specificity determines which styles are applied when conflicting styles are present. Specificity is calculated based on the type of selectors used and their order of appearance. Inheritance, on the other hand, allows certain properties of an element to be inherited by its children.
+
+The !important rule is a declaration that gives a style the highest specificity and overrides any conflicting styles. However, it is generally recommended to avoid using !important as it can make styles harder to maintain and override.
+
+Q.How can CSS be integrated into an HTML page?
+There are three ways of integrating CSS into HTML: using style tags in the head section, using inline-styling, writing CSS in a separate file, and linking into the HTML page by the link tag. 
+
+Q.How can you target h3 and h2 with the same styling?
+Multiple elements can be targeted by separating with a comma:
+
+h2, h3 {color: red;}
+
+Q.What does !important mean in CSS?
+The style “!important” in the CSS has the highest precedence. Also, the cascaded property will be overridden with it.
+
+Q.What are the different types of CSS?
+The different types of CSS are-
+Inline- It is used to style a specific HTML element.
+Embedded- Also known as Internal CSS, it is used to add <style> tag in the <head> section of HTML.
+Linked- Also known as External CSS, it is used to link the webpage to an external .css file.
+
+Q.What are the different components of CSS style?
+The components of CSS style are:
+Selectors- The target is a class name, element name, and id name.
+Property- The name of the attribute to be styled like border, background color, position, etc.
+Values- values allocated to the property.
+
+Q.How to use External Style Sheet?
+An external style sheet defines the style for many HTML pages.
+Add a link to the <head> section of each HTML page to use external style sheet.
+
+Example:
+
+
+<head>
+<link rel=”stylesheet” href=”mystyles.css”>
+</head>
+
+Q.Explain browser style sheets, user style sheets, and author style sheets in brief.
+Browser style sheets: The browsers, by default, apply style sheets to all web pages. This style sheet varies from browser to browser. Common characteristics in all browser style sheets include black text, blue links, purple visited links, etc. The author style sheet overrides the browser's style sheet.
+User style sheets: Most browsers allow users to set their style sheets within their browser. These style sheets will override the browser's default style sheets - for that user only.
+
+Author style sheets: The style sheet created by the developer is the author style sheet. Choosing fonts, colors, etc., in CSS is done using author style sheets.
+
+Q.How does !important work in CSS?
+!important gives the highest priority to the style rule and overrides the cascaded property.
+
+Style Code:
+
+p {
+     font-size: 2rem;
+     font-weight: bold;
+     color: red;
+}
+
+.important {
+color: blue !important;
+}
+ 
+
+Body Code:
+
+<p>Coding</p>
+/* color is blue instead of red */
+
+<p class="important">Ninjas</p>
+
+Q.How to include CSS in the webpage?
+With the help of a link tag, you can include an external style sheet file as a CSS file into your HTML file.
+You can add CSS styles included within your HTML page and write it in the stand-alone stylesheet form of CSS.
+CSS can be included directly in the HTML tag by adding an inline style to HTML elements.
+One can import an external stylesheet file as a new CSS file by using the @import rule. 
+
+Q.Is it important to test the webpage in different browsers?
+Yes, it is the most crucial thing or the most important trial to do when you design a webpage for the first time and make changes to it. Testing your website periodically in different browsers will help you make every webpage compatible with it as browsers have been going through many updates.
+
+Q.What does !important mean in CSS?
+The style “!important” in the CSS has the highest precedence. Also, the cascaded property will be overridden with it.
+
+Q.Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+No. The CSS file will be downloaded via browser in order to appear on the HTML page.
+
+Q.What is the syntax for CSS?
+A CSS style rule consists of a selector, property, and its value. The selector points to the HTML element where CSS style is to be applied. The CSS property is separated by semicolons.
+
+Q.In how many ways can we add CSS to our HTML file?
+Cascading Style Sheet(CSS) is used to set the style in web pages that contain HTML elements. It sets the background color, font size, font family, color, … etc properties of elements on a web page.
+There are three types of CSS which are given below:
+
+Inline CSS: Inline CSS contains the CSS property in the body section attached with the element known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+Internal or Embedded CSS: This can be used when a single HTML document must be styled uniquely. The CSS ruleset should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+External CSS: External CSS contains a separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property is written in a separate file with .css extension and should be linked to the HTML document using the link tag. This means that for each element, style can be set only once and that will be applied across web pages.
+
+Q.Which type of CSS holds the highest priority?
+Inline CSS has the highest priority, then comes Internal/Embedded followed by External CSS which has the least priority. Multiple style sheets can be defined on one page. If for an HTML tag, styles are defined in multiple style sheets then the below order will be followed.
+
+As Inline has the highest priority, any styles that are defined in the internal and external style sheets are overridden by Inline styles.
+Internal or Embedded stands second in the priority list and overrides the styles in the external style sheet.
+External style sheets have the least priority. If there are no styles defined either in the inline or internal style sheet then external style sheet rules are applied for the HTML tags.
+
+Q.What is the best way to include a CSS file? Why use @import?
+The External Style Sheet (using HTML <link> Tag) is the best method that is used to link the element. Maintaining and re-using the CSS file across different pages is easy and efficient. The <link> tag is placed in the HTML <head> element. To specify a media type=”text/css” for a Cascading Style Sheet <type> attribute which is used to ignore style sheet types that are not supported in a browser.
+
+@import rule: The @import rule is used to import one style sheet into another style sheet. This rule also supports media queries so that the user can import the media-dependent style sheet. The @import rule must be declared at the top of the document after any @charset declaration.
+
+Characteristics of @import:
+
+The @import at-rule is used to import a style sheet into an HTML page or another style sheet.
+The @import at-rule is also used to add media queries, therefore import is media-dependent.
+It is always to be declared at the top of the document.
+
+Q.What is !important?
+The !important property in CSS is used to provide more weight (importance) than normal property. In CSS, the !important means that “this is important”, ignore all the subsequent rules, and apply !important rule and the !important keyword must be placed at the end of the line, immediately before the semicolon.
+
+In other words, it adds importance to all the sub-properties that the shorthand property represents.
+In normal use, a rule defined in an external style sheet which is overruled by a style defined in the head of the document, which in turn, is overruled by an inline style within the element itself (assuming equal specificity of the selectors).
+Defining a rule with the !important attribute that discards the normal concerns as regards the later rule overriding the earlier ones.
+So, it is used for overriding the styles that are previously declared in other style sources, in order to achieve a certain design.
+

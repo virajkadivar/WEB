@@ -1,0 +1,261 @@
+Q.What is a CSS selector, and how do you use it?
+A CSS selector targets HTML elements to apply styles. To use it specify the element, class, or ID within a CSS rule.
+
+Q.How do you select all elements of a specific type with CSS?
+To select all elements of a specific type with CSS, use the type selector, which matches elements by their tag name. For example, p selects all <p> elements, applying the defined styles to every paragraph in the document.
+
+Q.What is a class selector, and how is it different from an ID selector?
+A class selector in CSS is denoted by a period (.) followed by the class name and applies styles to all elements with that class attribute. An ID selector is indicated by a hash (#) followed by the ID value and targets a unique element with a specific ID attribute. Class selectors allow for the styling of multiple elements. ID selectors are meant for styling individual elements that require unique treatment.
+
+Q.What is the importance of specificity in CSS?
+Specificity in CSS is a set of rules that determines which style declarations are applied to an element when multiple declarations have different selectors but could apply to the same element. Specificity ensures that the most relevant style is applied by calculating a specificity value for each selector, where inline styles have the highest specificity, followed by IDs, classes, and then type selectors.
+
+Q.How can you group multiple CSS selectors to apply the same styles?
+To group multiple CSS selectors and apply the same styles, list the selectors separated by commas. This method consolidates CSS rules, reducing redundancy and making the stylesheet more efficient.
+
+Q.How can you make a CSS rule more specific without using IDs?
+To make a CSS rule more specific without using IDs, combine class selectors or use attribute selectors. Specificity increases with each added selector, allowing for more targeted styling without relying on the higher specificity of ID selectors.
+
+Q.Explain the "nth-child" and "nth-of-type" CSS selectors for targeting specific elements in a group.
+The "nth-child" and "nth-of-type" CSS selectors target specific elements based on their position within a parent.
+
+Q.What is the purpose of CSS selectors?
+CSS selectors are patterns used to identify and select HTML elements to which specific styles should be applied. The main purpose of CSS selectors is to target elements on a web page based on their attributes, positions, or relationships with other elements so that you can apply styling rules to them.
+
+Q.Explain the difference between an ID selector and a class selector in CSS.
+In CSS, an ID selector is used to select and style a specific element with a unique ID attribute, written as "#ID". A class selector, denoted by a "." before the class name, is used to select and style elements with a specific class, and can be used on multiple elements. ID selectors are unique, while class selectors can be used multiple times.
+
+Q.How do you apply CSS styles to only the last child of an element?
+To apply CSS styles to only the last child of an element, you can use the ":last-child" pseudo-class selector. For example:
+
+.parent-element :last-child {
+
+/* CSS styles for the last child element */
+
+}
+
+Q.What do you understand by the universal sector?
+A universal selector is a selector that matches any element type's name instead of selecting elements of a particular type. 
+
+Example: 
+
+<style>    
+
+* {    
+
+   color: blue;    
+
+   font-size: 10px;    
+
+}     
+
+</style>    
+
+Q.What is the difference between a class and an ID?
+Class is a way of using HTML elements for styling. They are not unique and have multiple elements. Whereas ID is unique and it can be assigned to a single element. 
+
+Q.What are the different types of Selectors in CSS?
+Universal Selector, Element type Selector, ID selector, Class selector, Descendant combinatory, Child Combinator, General Sibling Combinator, Adjacent sibling combinator, and Attribute selector.
+
+Q.Differentiate between the use of ID selector and class selector.
+ID Selector:
+
+<style>
+
+{
+
+text-align: right;
+
+color: blue;
+
+}
+
+</style>
+
+CSS class Selector: 
+
+<style>
+
+.right {
+
+text-align: right;
+
+color: blue;
+
+}
+
+</style>
+
+Q.How is a CSS selector used?
+With a CSS selector, we can choose the content we want to style to bridge between HTML files and style sheets. CSS selector syntax is "select" HTML elements created on their class, id, type, etc. 
+
+Q.What is common between class and ID?
+Both class and ID are used in HTML to assign a value from CSS. The ID is used as an element, whereas the class is used as a block. 
+
+Q.Define Universal Sector.
+The universal selector selects all the elements and applies the CSS properties to them.
+
+Syntax:
+
+* { style properties }
+
+Example:
+
+* {
+  color: blue;
+}
+
+Q.What is the difference between a class and an ID?
+Class is an attribute that defines a group of HTML elements to apply unique styling and formatting to those elements. Class is not unique and has multiple elements.
+The ID selectors style the element with the specified ID. ID is unique, and it can be assigned to a single element.
+
+Q.Is it possible to make a class selector for a particular elements? If so how?
+Yes, it is possible to make a class selector for a particular element- write a period (.) character, followed by the name of the class. 
+
+Q.How to use grouping in CSS?
+Grouping is used for applying CSS styles for more than one HTML element, and this can be done with a single declaration.
+
+Example:
+
+h2,h3
+{
+Color: #FFFFFF;
+}
+
+Q.Explain the different types of selectors in CSS?
+A CSS selector is a string that identifies the elements to which a particular CSS property is applied. The different types of selectors are:-
+
+Universal Selector: The universal selector selects all the elements and applies the CSS properties to them.
+Element Type Selector: It matches one or more HTML elements of the same element type.
+ID Selector: It matches the HTML element with an ID attribute the same as the selector value.
+Class Selector: It matches all page elements with their class attribute same as the selector value.
+Descendant Combinator: The descendant combinator combines two or more selectors so that elements can be selected more specifically. It selects all HTML elements: children, grandchildren, great-grandchildren, and so on.
+Child Combinator: A child combinator targets immediate child elements of a parent element. 
+General Sibling Combinator: It matches elements based on sibling relationships. The selected elements stay beside each other in the HTML document.
+Adjacent Sibling Combinator: It targets an element that must be an immediate sibling.
+Attribute Selector: It targets elements based on HTML attributes' presence and/or value.
+Pseudo-class: It uses a colon character to identify a pseudo-state that an element might be in, for example, the stage of being hovered.
+
+Q.What are the different types of Selectors in CSS?
+Universal Selector, Element type Selector, ID selector, Class selector, Descendant combinatory, Child Combinator, General Sibling Combinator, Adjacent sibling combinator, and Attribute selector.
+
+Q.How are the CSS selectors matched against the elements by the browser?
+Initially, there is a filtration of elements in the DOM via browsers with respect to key selectors that are traversed until we get parents' elements to determine the matches. Then the browser works on finding all the span elements present in the DOM and traverses them to parent elements to check whether they are matched to paragraph p elements. At last, when the browser finds all matches as parents, the matching process will be stopped and there will be black color applied to the content.
+
+Q.What do the following CSS selectors mean?
+div, p
+div p
+div ~ p
+div + p
+div > p
+div, p: This selector implies selecting all div elements and all p elements.
+Consider an example below:
+
+ <h1>Heading 1</h1>
+   <div>
+       Division 1
+       <p> paragraph 1</p> <!-- Will be selected -->
+   </div>
+   <p> paragraph 2</p> 
+   <p> paragraph 3</p> 
+   <div>
+       Division 2
+   </div>
+   <span> Span 1 </span>
+Here, all the div elements and the p elements would be selected by the browser irrespective of their parents or where they are placed. The remaining tags like h1 and span are ignored.
+
+div p : This selector tells to select all p elements that are inside div elements. Consider an example below:
+  <h1>Heading 1</h1>
+<div>
+    Division 1
+    <p> paragraph 1</p> <!-- Will be selected -->
+    <div>
+        <p> Inner Div Paragraph </p> <!-- Will be selected -->
+    </div>
+</div>
+<p> paragraph 2</p>
+<p> paragraph 3</p>
+<div>
+    Division 2
+</div>
+<span> Span 1 </span>
+Here, <p> paragraph 1</p> and <p> Inner Div Paragraph </p> would be selected by the browser and the properties are applied. The rest of the paragraph tags are not selected.
+
+div ~ p : This selector tells to select all p elements that have div elements preceeded anywhere. Consider an example,
+<h1>Heading 1</h1>
+<div>
+   Division 1
+   <p> paragraph 1</p>
+</div>
+<p> paragraph 2</p> <!-- Will be selected -->
+<p> paragraph 3</p> <!-- Will be selected -->
+<div>
+   Division 2
+</div>
+<span> Span 1 </span>
+Here, paragraph 2 and paragraph 3 elements would be selected as marked in the code above.
+
+div + p : This selector says to select all p elements placed immediately after the div element. Consider an example in this case:
+    <h1>Heading 1</h1>
+   <div>
+       Division 1
+       <p> paragraph 1</p>
+   </div>
+   <p> paragraph 2</p> <!-- Will be selected -->
+   <p> paragraph 3</p> 
+   <div>
+       Division 2
+   </div>
+   <span> Span 1 </span>
+In this case, we have paragraph 2 element immediately after the div tag. Hence, only that element will be selected.
+
+div > p : This selector says to select all p elements which has div as an immediate parent. In the same example below:
+    <h1>Heading 1</h1>
+   <div>
+       Division 1
+       <p> paragraph 1</p> <!-- Will be selected -->
+   </div>
+   <p> paragraph 2</p> 
+   <p> paragraph 3</p> 
+   <div>
+       Division 2
+   </div>
+   <span> Span 1 </span>
+Only <p> paragraph 1</p> will be selected in this case because it has immediate div as the parent.
+
+Q.What are CSS Selectors?
+CSS Selectors: CSS Selectors are used to selecting HTML elements based on their element name, id, attributes, etc. It can select one or more elements simultaneously.
+
+element selector: The element selector in CSS is used to select HTML elements which are required to be styled. In a selector declaration, there is the name of the HTML element, and the CSS properties which are to be applied to that element is written inside the brackets {}.
+
+Syntax:
+
+element_name {
+    // CSS Property
+}
+id selector: The #id selector is used to set the style of the given id. The id attribute is the unique identifier in an HTML document. The id selector is used with a # character.
+
+Syntax:
+
+#id_name { 
+    // CSS Property
+}
+class selector: The .class selector is used to select all elements which belong to a particular class attribute. To select the elements with a particular class, use the (.) character with specifying the class name. The class name is mostly used to set the CSS property to the given class.
+
+Syntax:
+
+.class_name {
+    // CSS Property
+}
+
+Q.What is meant by universal selector?
+The * selector in CSS is used to select all the elements in an HTML document. It also selects all elements which are inside under another element. It is also called the universal selector.
+
+Syntax:
+
+* {
+    // CSS property
+} 
+
+Q.What is the difference between class and id selector?
+ I'd be happy to explain! In CSS, both class and id selectors are used to select and style HTML elements. The main difference lies in their specificity. An id selector is unique to a single element on a page, indicated by the "#" symbol and a unique name. A class selector, however, can be applied to multiple elements and is denoted by a dot "." followed by a class name. This allows for more widespread styling.

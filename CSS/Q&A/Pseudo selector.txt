@@ -1,0 +1,331 @@
+Q.Explain the use of pseudo-classes in CSS and provide examples.
+Pseudo-classes in CSS are used to define special states of an element. Examples include :hover, which applies styles when the user hovers over an element with the mouse, and :focus, which applies when an element gains focus.
+
+Q.How can you apply CSS styles only to visited links?
+To apply CSS styles only to visited links, use the “:visited” pseudo-class. The “:visited” pseudo-class targets links that the user has already visited, allowing for different styling to distinguish them from unvisited links. This enhances navigational cues and user experience by visually indicating visited links.
+
+Q.Explain the use of CSS pseudo-elements like "::before" and "::after."
+CSS pseudo-elements "::before" and "::after" insert content into a page without altering the HTML. The pseudo-elements create decorative elements or add content before or after an element's content, enriching the document's visual appeal and layout.
+
+Q.What are CSS "pseudo-elements" like "::first-letter" and "::first-line," and when should you use them?
+CSS "pseudo-elements" like "::first-letter" and "::first-line" target the first letter or line of an element. Stylists use pseudo-elements to enhance the readability and visual appeal of text, applying styles like drop caps and text highlighting.
+
+Q.How do you apply CSS styles to only the first letter of a paragraph?
+To apply CSS styles to only the first letter of a paragraph, you can use the ::first-letter pseudo-element. It allows you to target and style the first letter of a text element without altering the HTML structure. Here's an example:
+
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  color: blue;
+}
+In this example, the first letter of every < p > (paragraph) element will be styled with a larger font size (2 times the normal font size), bold font-weight, and blue color.
+
+Q.How do you create a hyperlink style in CSS?
+To create a hyperlink style in CSS, target the anchor element and apply the desired styles to the different hyperlink states - unvisited (link), visited, hover, and active. The common hyperlink states and their CSS pseudo-classes are:
+
+:link - targets unvisited links
+:visited - targets visited links
+:hover - targets links when being hovered by the mouse cursor
+:active - targets links when being clicked or activated by keyboard
+Here's an example of creating a simple hyperlink style:
+
+/* Unvisited link */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* Hover effect */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Active link */
+a:active {
+  color: orange;
+}
+
+Q.Explain the difference between nth-child() and:nth-of-type() selectors.
+Both :nth-child() and :nth-of-type() are CSS pseudo-class selectors that allow you to target specific elements based on their position in a group of siblings. However, they differ in the way they determine which elements to select.
+
+:nth-child() selects elements based on their position in the group of all sibling elements, regardless of their type (e.g., < div >, < p >, < li >). The syntax is :nth-child(an+b), where a and b are integers and n is a counter that starts from 0.
+
+:nth-of-type() selects elements based on their position in a group of siblings with the same element type. The syntax for :nth-of-type() is almost identical to :nth-child(): :nth-of-type(an+b).
+
+Q.What are CSS pseudo-classes? Give some examples?
+CSS pseudo-classes are keywords added to selectors that specify a state or behavior of an element. They allow you to style elements based on their state or position in the document tree.
+
+Here are some examples of CSS pseudo-classes:
+
+:hover - applies styles when the element is being hovered over by the mouse.
+:active - applies styles when the element is being activated by the user.
+:first-child - selects the first child element of its parent.
+:nth-child(n) - selects the nth child element of its parent.
+
+Q.What are CSS pseudo-elements? Give examples of their usage.
+CSS pseudo-elements are used to style specific parts of an element. They are denoted by double colons (::) and provide additional styling capabilities. Examples of CSS pseudo-elements include:
+
+::before: Inserts content before the element's content.
+::after: Inserts content after the element's content.
+::first-letter: Styles the first letter of the element.
+::first-line: Styles the first line of the element's content.
+
+Q.Explain the concept of CSS pseudo-classes and give examples of their usage.
+CSS pseudo-classes are selector modifiers that allow you to target and style HTML elements based on their state, position within the document tree, or other characteristics, without the need to add additional classes or attributes to the markup itself. Pseudo-classes are applied by adding a colon ( : ) followed by the pseudo-class name after the selector.
+
+Here are some common examples of CSS pseudo-classes and their usage:
+
+:hover: This pseudo-class targets an element when the user hovers the cursor over it. It's often used to change the appearance of an element on hover, such as a link or button.
+a:hover {
+  color: red;
+}
+:focus: This pseudo-class targets an element when it receives focus, usually by clicking or navigating with the Tab key. It's commonly used to provide visual indication for form inputs or interactive elements.
+input:focus {
+  outline: none;
+  border-color: blue;
+}
+:active: This pseudo-class targets an element when it's being activated (pressed or clicked). It's used to give the effect of user interaction, such as buttons being pressed.
+button:active {
+  background-color: darkgray;
+}
+:nth-child(n): This pseudo-class targets elements based on their position within their parent container. n can be a number, a keyword, or an equation, allowing for flexible targeting. It's commonly used to style every odd/even element or apply distinct styles at certain positions.
+li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+li:nth-child(2n) {
+  font-weight: bold;
+}
+
+Q.What are CSS pseudo-classes and pseudo-elements and how do they differ?
+CSS pseudo-classes and pseudo-elements are selectors that target specific elements based on their state or position within the document tree.
+
+Pseudo-classes start with a colon ( : ) and target elements based on a specific state or action. Examples include :hover, :active, :focus, :first-child, :nth-child(), etc.
+
+Pseudo-elements start with two colons ( :: ) and target specific parts of an element, allowing for the creation of virtual elements. Examples include ::before, ::after, ::first-line, ::first-letter, etc.
+
+The main difference between pseudo-classes and pseudo-elements is that pseudo-classes target elements based on state or position, while pseudo-elements target specific parts or generate additional content.
+
+Q.What are Pseudo classes?
+Pseudo-classes are the type of pseudo-elements that don’t exist in a normal document tree. It allows selecting the regular elements under certain conditions especially when we try to hover over the link; the anchor tags are :link, :visited, :hover, :active, :focus
+
+In this example, the color will be red on the anchor tag when it’s hovered.
+
+/* mouse over link */
+
+a:hover {
+
+color: #FFOOFF;
+
+}
+
+Q.What does the: root pseudo-class refer to?
+The: root selector pseudo-class refers to the CSS selector level 3. It helps to target the highest-level parent element present in the DOM.
+
+Q.Name different ways to position some aspects in CSS. 
+The positioning property specifies the positioning method type. The five different position values are fixed, static, absolute, sticky, and relative. The elements are positioned using top, left, right, and bottom properties. These properties need to be set first, and they work depending on position value. 
+
+Q.What do you understand by pseudo-elements?
+Pseudo-elements provide special effects to some selectors. CSS finds use in applying styles in HTML markups. If additional markup or style is not feasible for a document, the pseudo-elements help by allowing extra markup without interfering with the original document. 
+
+Q.Mention the difference between the nth-child() and nth-of-type() selectors?
+The nth-child() pseudo-class matches an element based on a number, where the number represents the number of siblings that exist before the element in the document tree.
+
+The nth-of-type() pseudo-class matches an element based on a number, where the number represents the element's position within only those of its siblings of the same element type.
+
+Style Code:
+
+p {
+     font-size: 2rem;
+     font-weight: bold;
+    }
+
+    /* works if the second child element is of type p */
+    p:nth-child(2) {
+     color: red;
+    }
+
+
+    /* does not work as the fourth child element is not of type p */
+    p:nth-child(4) {
+     color: blue;
+    }
+
+    /* applied to second p element */
+    p:nth-of-type(2) {
+     color: green;
+   }
+ 
+
+Body Code:
+
+<h1>A</h1>  
+ <p>B</p> 
+ <p>C</p> 
+ <h1>D</h1>
+ <p>E</p>
+
+Q.What are Pseudo elements?
+In CSS, the pseudo elements style specific parts of an element. For example, you can capitalize the first letter of an element or insert some content before, or after some specified element. 
+The syntax of a pseudo element can be seen as:
+
+selector::pseudo-element {
+  property: value;
+}
+ 
+
+Some of the pseudo-elements defined in CSS include: 
+
+::after
+ 
+::backdrop
+ 
+::before
+ 
+::first-letter
+ 
+::first-line
+ 
+::file-selector-button, etc.
+
+Q.What are Pseudo classes?
+In CSS, a pseudo-class defines a special state of an element. 
+
+The syntax of a pseudoclass is as follows:
+
+selector:pseudo-class {
+  property: value;
+}
+ 
+
+You can express a  pseudo class adding a colon (:) after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or "active", like this: 
+
+a:hover { /* style */ }.
+
+Some of the examples of pseudoclasses include:
+
+:fullscreen
+ 
+:modal
+ 
+:picture-in-picture
+ 
+:autofill, etc.
+
+Q.What are Pseudo elements and Pseudo classes?
+Pseudo-elements allows us to create items that do not normally exist in the document tree, for example ::after.
+
+::before
+::after
+::first-letter
+::first-line
+::selection
+In the below example, the color will appear only on the first line of the paragraph.
+
+p: :first-line {
+	color: #ffOOOO;
+	font-variant: small-caps;
+}
+Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+
+:link
+:visited
+:hover
+:active
+:focus
+Example of the pseudo-class, In the below example, the color applies to the anchor tag when it’s hovered.
+
+/* mouse over link */
+a:hover {
+	color: #FFOOFF;
+}
+
+Q.What does the :root pseudo-class refer to?
+The :root selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
+
+Q.How is the nth-child() different from nth of type selectors?
+Both are pseudo-classes (Pseudo-classes are those keywords that specifies the special state of the selected element). The nth-child() pseudo-class is used for matching elements based on the number that represents the position of an element based on the siblings. The number is used to match an element on the basis of the element’s position amongst its siblings.
+
+For example, in the below piece of code, if we give nth-child(4) for the example class, then the 4th child of the example class is selected irrespective of the element type. Here, the fourth child of the example class is the div element. The element is selected and a background of black is added to it.
+
+.example:nth-child(4) {   
+    background: black; 
+}
+<div class="example">
+	<p>This is a paragraph.</p>
+	<p>This is a paragraph.</p>
+	<p>This is a paragraph.</p>
+	<div>This is a div.</div> <!-- 4th Element to select and apply style-->
+	<div>This is a div.</div> 
+	<p>This is a paragraph.</p>
+	<p>This is a paragraph.</p>
+	<div>This is a div.</div>
+</div>
+The nth-of-type() pseudo-class is similar to the nth-child but it helps in matching the selector based on a number that represents the position of the element within the elements that are the siblings of its same type. The number can also be given as a function or give keywords like odd or even.
+
+For example, in the below piece of code, if we give p:nth-of-type(even) for the example class, then all the even paragraph tags are selected within the example class and the style of background black is applied to them. The selected elements are marked in comments in the below code:
+
+.example p:nth-of-type(even) { 
+    background: black; 
+}
+<div class="example">
+	<p>This is a paragraph.</p> 
+	<p>This is a paragraph.</p> <!-- Select this and apply style-->
+	<p>This is a paragraph.</p> 
+	<div>This is a div.</div>
+	<div>This is a div.</div> 
+	<p>This is a paragraph.</p> <!-- Select this and apply style-->
+	<p>This is a paragraph.</p> 
+	<div>This is a div.</div>
+	<p>This is a paragraph.</p> <!-- Select this and apply style-->
+	<div>This is a div.</div>
+</div>
+
+Q.What are the different CSS link states?
+A link is a connection from one web page to another web page. CSS property can be used to style the links in various different ways.
+
+States of Link: Before discussing CSS properties, it is important to know the states of a link. Links can exist in different states and they can be styled using pseudo-classes.
+There are four states of links given below:
+
+a:link: This is a normal, unvisited link.
+a:visited: This is a link visited by a user at least once
+a:hover: This is a link when the mouse hovers over it
+a:active: This is a link that is just clicked.
+
+Q.What are pseudo-classes in CSS?
+A Pseudo class in CSS is used to define the special state of an element. It can be combined with a CSS selector to add an effect to existing elements based on their states. For Example, changing the style of an element when the user hovers over it, or when a link is visited. All of these can be done using Pseudo Classes in CSS.
+
+Note that pseudo-class names are not case-sensitive.
+
+Syntax:
+
+selector: pseudo-class{
+     property: value;
+}
+There are many Pseudo-classes in CSS but the ones which are most commonly used are as follows:
+
+:hover Pseudo-class: This pseudo-class is used to add a special effect to an element when our mouse pointer is over it. The below example demonstrates that when your mouse enters the box area, its background color changes from yellow to orange.
+:active Pseudo-class: This pseudo-class is used to select an element that is activated when the user clicks on it. The following example demonstrates that when you click on the box, its background color changes for a moment.
+:focus Pseudo-class: This pseudo-class is used to select an element that is currently focussed by the user. It works on user input elements used in forms and is triggered as soon as the user clicks on it. In the following example, the background color of the input field which is currently focused changes.
+:visited Pseudo-class: This pseudo-class is used to select the links which have been already visited by the user. In the following example, the color of the link changes once it is visited.
+
+Q.What are pseudo-elements in CSS?
+Pseudo Elements: Pseudo-element in CSS is used to add style to specified parts of an element. Example: Using style before or after an element.
+
+Syntax:
+
+selector::pseudo-element { 
+    property:value; 
+} 
+Use of Pseudo-Element: Below is some examples to describe the use of pseudo-element.
+
+::before Pseudo-element: It is used to add some CSS property before an element when that element is called.
+::after Pseudo-element: It is used to add some CSS property after an element when that element is called.
+::first-letter Pseudo-element: It is used to make changes to the first letter of an element.
+::first-line Pseudo-element: It is used to make changes to the first line of an element.

@@ -1,0 +1,76 @@
+Q.How do you change the color of text and background in CSS?
+To change the color of text and background in CSS, use the color and background-color properties, respectively. Color applies to the text itself and background-color applies to the area behind the text.
+
+Q.Describe the difference between "absolute" and "fixed" positioning in CSS.
+Absolute positioning places an element relative to its nearest positioned ancestor. The fixed positioning anchors it relative to the viewport.
+
+Q.How do you change the background color of an element in CSS?
+To change the background color of an element in CSS, you use the background-color property and set it to the desired color. You can use color names, hexadecimal values, RGB, or HSL values as the color value. Here's an example of how to set the background color of an element with a class name "example":
+
+.example {
+  background-color: red; /* color name */
+  /* or */
+  background-color: #ff0000; /* hexadecimal value */
+  /* or */
+  background-color: rgb(255, 0, 0); /* RGB value */
+  /* or */
+  background-color: hsl(0, 100%, 50%); /* HSL value */
+}
+Apply the class to an HTML element:
+
+<div class="example">
+  This element's background color is red.
+</div>
+
+Q.How do you add a background image to an element in CSS?
+To add a background image to an element in CSS, you use the background-image property. You'll need to provide the URL of the image file within the url() function as the property's value. Here's an example:
+
+.selector {
+
+background-image: url('path/to/image.jpg');
+
+}
+
+Replace .selector with the appropriate CSS selector for the element you want to apply the background image to, and replace 'path/to/image.jpg' with the actual path to the image file.
+
+Q.How do you implement a CSS-only parallax scrolling effect?
+Implementing a CSS-only parallax scrolling effect can be achieved by using CSS properties like background-attachment and background-position to create the illusion of depth. Here's an example:
+
+.parallax-section {
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+In this example, the background image is set to fixed attachment, and the background-position is adjusted to create the parallax scrolling effect.
+
+Q.Tell us about the property used for image scroll controlling?
+The background-attachment property is used to set whether the background image is fixed or it scrolls with the rest of the page. Example for a fixed background-image:
+
+body {
+
+  background-image: url(‘url_of_image’);
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+}
+
+Q.Explain CSS position property?
+Absolute: To place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent is available then the relative place to the page itself (it will default all the way back up to the element).
+Relative: "Relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on its positioning. It allows the use of z-index on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block. 
+Fixed: The element is positioned relative to the viewport or the browser window itself. viewport doesn't change if you scroll and hence the fixed element will stay right in the same position. 
+Static: Static default for every single page element. The only reason you would ever set an element to position: static is to forcefully remove some positioning that got applied to an element outside of your control.
+Sticky: Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
+
+Q.What are CSS backgrounds, list the properties?
+The CSS background properties are used to define the background effects for elements.
+
+CSS background properties are as follows:
+
+background-color: This property specifies the background color of an element.
+background-image: This property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.
+background-repeat: By default, the background image property repeats the image both horizontally and vertically.
+background-attachment: This property is used to fix the background ground image. The image will not scroll with the page.
+background-position: This property is used to set the image to a particular position.

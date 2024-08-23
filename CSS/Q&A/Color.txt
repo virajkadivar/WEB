@@ -1,0 +1,26 @@
+Q.How do you change the color of text and background in CSS?
+To change the color of text and background in CSS, use the color and background-color properties, respectively. Color applies to the text itself and background-color applies to the area behind the text.
+
+Q.How do you change the text color of an element in CSS?
+To change the text color of an element in CSS, you use the color property and set it to the desired color. You can use color names, hexadecimal values, RGB, or HSL values as the color value. Here's an example of how to set the text color of an element with a class name "example":
+
+.example {
+  color: green; /* color name */
+  /* or */
+  color: #008000; /* hexadecimal value */
+  /* or */
+  color: rgb(0, 128, 0); /* RGB value */
+  /* or */
+  color: hsl(120, 100%, 25%); /* HSL value */
+}
+Apply the class to an HTML element:
+
+<div class="example">
+  The text color of this element is green.
+</div>
+
+Q.What is the purpose of the CSS opacity property?
+The CSS opacity property is used to control the transparency of an element. It accepts a value between 0 (completely transparent) and 1 (fully opaque). It can be used to create subtle transparency effects or fade animations.
+
+Q.What is meant by RGB stream?
+RGB represents colors in CSS. The three streams are namely Red, Green, and Blue. The intensity of colors is represented using numbers 0 to 256. This allows CSS to have a spectrum of visible colors. 

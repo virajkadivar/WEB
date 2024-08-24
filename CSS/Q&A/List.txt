@@ -1,0 +1,15 @@
+Q.How do you create a list without bullets in CSS?
+To create a list without bullets in CSS, you need to target the list element(s) and set the list-style-type property to none. Typically, you will either work with unordered lists (< ul >) or ordered lists (< ol >). Here's how you can remove bullets (or numbers) from an unordered list:
+
+ul {
+  list-style-type: none;
+}
+This CSS rule targets all unordered lists (< ul >) in the document and removes the bullets by setting the list-style-type to none.
+
+Q.Can we add an image as a list item marker?
+To add an image as the list-item marker in a list, we use the list-style-image property in CSS. 
+
+Syntax:
+
+list-style-image: none | url | initial | inherit;
+

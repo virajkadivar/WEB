@@ -1,0 +1,28 @@
+Q.What is the difference between CSS border and outline?
+CSS border properties allow us to set the style, color, and width of the border.
+CSS outline property allows us to draw a line around the element, outside the border.
+Example:
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>      
+        p {
+            outline: 5px solid #ddd;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+</body>
+
+</html> 
+Differences:
+
+Unlike borders, outlines don’t allow us to set each edge to a different width, or set different colors and styles for each edge. An outline is the same on all sides.
+Outlines cannot be circular.
+Outlines do not take up space, because they are always placed on top of the box of the element.

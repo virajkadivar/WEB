@@ -1,0 +1,11 @@
+Q.What are the attribute selectors?
+The CSS Attribute Selector is used to select an element with some specific attribute or attribute value. It is an excellent way to style the HTML elements by grouping them based on some specific attributes and the attribute selector will select those elements with similar attributes.
+There are several types of attribute selectors which are discussed below:
+
+[attribute] Selector: This type of attribute selector is used to select all the elements that have the specified attribute and applies the CSS property to that attribute. For example, the selector [class] will select all the elements with the style attribute.
+[attribute = “value”] Selector: This selector is used to select all the elements whose attribute has the value exactly the same as the specified value.
+[attribute~=”value”] Selector: This selector is used to select all the elements whose attribute value is a list of space-separated values, one of which is exactly equal to the specified value.
+[attribute|=”value”] Selector: This selector is used to select all the elements whose attribute has a hyphen-separated list of values beginning with the specified value. The value has to be a whole word either alone or followed by a hyphen.
+[attribute^=”value”] Selector: This selector is used to select all the elements whose attribute value begins with the specified value. The value doesn’t need to be a whole word.
+[attribute$=”value”] Selector: This selector is used to select all the elements whose attribute value ends with the specified value. The value doesn’t need to be a whole word.
+[attribute*=”value”] Selector: This selector selects all the elements whose attribute value contains the specified value present anywhere. The value doesn’t need to be a whole word.

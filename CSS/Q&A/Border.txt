@@ -1,0 +1,6 @@
+Q.What are the different CSS border properties?
+CSS border properties allow us to set the style, color, and width of the border.
+
+Border Style: The border-style property specifies the type of border. None of the other border properties will work without setting the border style.
+Border Width: Border width sets the width of the border. The width of the border can be in px, pt, cm or thin, medium and thick.
+Border Color: This property is used to set the color of the border. Color can be set using the color name, hex value, or RGB value. If the color is not specified border inherits the color of the element itself.

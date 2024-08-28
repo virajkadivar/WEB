@@ -1,0 +1,67 @@
+Q.Explain the difference between margin and padding?
+Margin is applicable outside the element and affects the distance with the nearby elements.
+
+Padding is applicable inside elements and affects how far the element's content is away from the border.
+
+Q.How is margin different from padding in CSS?
+Margin property using which we can create space around the elements. We can also create space for borders defined at the exteriors. We have the following properties for defining the margin:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin property by itself has the values as:
+auto – The browser auto-calculates the margin while we use this.
+length – The value of this property can be in px, pt, cm, em etc. The values can be positive or negative.
+% – We can also give percentage value as margin to the element.
+inherit – Using this property, the margin properties can be inherited from the parent elements.
+The padding property is used for generating the space around the element’s content and inside any known border. The padding also has sub-properties like:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+It is to be noted that the padding does not allow negative values.
+
+Q.What does margin: 40px 100px 120px 80px signify?
+CSS margins are used to create space around the element. We can set the different sizes of margins for individual sides (top, right, bottom, left).
+
+Margin properties can have the following values:
+
+Length in cm, px, pt, etc.
+Width % of the element.
+Margin calculated by the browser: auto.
+Therefore, margin: 40px 100px 120px 80px signifies:
+
+top = 40px
+right = 100px
+bottom = 120px
+left = 80px
+
+Q.What is the difference between margin and padding?
+Margin is used to create space around elements and padding is used to create space around elements inside the border.
+We can set the margin property to auto but we cannot set the padding property to auto.
+In Margin property we can allow negative or float number but in padding we cannot allow negative values.
+Margin and padding target all the 4 sides of the element. Margin and padding will work without the border property also. 
+Example:
+
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style> 
+        h2 { 
+            margin:50px; 
+            border:70px solid green; 
+            padding:80px; 
+        } 
+    </style> 
+</head> 
+
+<body> 
+    <h1>GEEKSFORGEEKS</h1> 
+    <h2> 
+        Padding properties 
+    </h2> 
+</body> 
+</html> 

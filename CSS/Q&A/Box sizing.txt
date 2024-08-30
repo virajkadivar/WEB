@@ -1,0 +1,90 @@
+Q.What are the elements of the CSS Box Model?
+The CSS box model is used to create the design and layout of the web pages. The box contains multiple properties like Content, Padding, Border, and Margin.
+
+Content- The text and the images appear in the content of the box.
+
+Padding- Clears an area around the content.
+
+Border- It is a border that goes around the padding and content. 
+
+Margin- Clears an area outside the border.
+
+Both padding and margin are transparent.
+
+Q.What is the Box model in CSS? Which CSS properties are a part of it?
+A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.
+Content:  Actual Content of the box where the text or image is placed.
+Padding: Area surrounding the content (Space between the border and content).
+Border: Area surrounding the padding.
+Margin: Area surrounding the border.
+
+Q.How is border-box different from content-box?
+content-box is the default value box-sizing property. The height and the width properties consist only of the content by excluding the border and padding. Consider an example as shown:
+
+div{
+    width:300px;
+    height:200px;
+    padding:15px;
+    border: 5px solid grey;
+    margin:30px;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+The border-box property includes the content, padding and border in the height and width properties. Consider an example as shown:
+
+div{
+    width:300px;
+    height:200px;
+    padding:15px;
+    border: 5px solid grey;
+    margin:30px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+Here, the box-sizing for the div element is given as border-box. That means the height and width considered for the div content will also include the padding and border. This means that the actual height of the div content will be:
+
+actual height = height - 
+                padding on top and bottom - 
+                border on top and bottom
+              = 200 - (15*2) - (5*2) 
+              = 160 px
+and the actual width of the div content would be:
+
+actual width  = width - 
+                padding on right and left - 
+                border on right and left
+              = 300 - (15*2) - (5*2) 
+              = 260 px
+
+Q.Different Box Sizing Property?
+Content-box, Padding-box and Border-box
+
+Q.What does * { box-sizing: border-box; } do? What are its advantages?
+Box-sizing: border-box is used to provide the inner dimension for the elements in the document by providing padding and border with respect to the height and width of the content.
+
+Q.What is CSS Box Model?
+The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model.
+Box-Model has multiple properties in CSS. Some of them are given below:
+
+borders
+margins
+padding
+Content
+
+Border Area: It is the area between the box’s padding and margin. Its dimensions are given by the width and height of the border.
+Margin Area: This area consists of space between border and margin. The dimensions of the Margin area are the margin-box width and the margin-box height. It is useful to separate the element from its neighbors.
+Padding Area: It includes the element’s padding. This area is actually the space around the content area and within the border box. Its dimensions are given by the width of the padding-box and the height of the padding-box.
+Content Area: This area consists of content like text, images, or other media content. It is bounded by the content edge and its dimensions are given by content box width and height.
+
+Q.What does the CSS box-sizing property do?
+The box-sizing CSS property defines how the user should calculate the total width and height of an element i.e. padding and borders, are to be included or not.
+
+Syntax:
+
+box-sizing: content-box|border-box;
+Property Values:
+
+content-box: This is the default value of the box-sizing property. In this mode, the width and height properties include only the content. Border and padding are not included in it i.e if we set an element’s width to 200 pixels, then the element’s content box will be 200 pixels wide, and the width of any border or padding will be added to the final rendered width.
+border-box: In this mode, the width and height properties include content, padding, and borders i.e if we set an element’s width to 200 pixels, that 200 pixels will include any border or padding we added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.

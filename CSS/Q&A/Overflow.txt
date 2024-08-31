@@ -1,0 +1,82 @@
+Q.How does this property work overflow: hidden?
+The overflow property in CSS is used for specifying whether the content has to be clipped or the scrollbars have to be added to the content area when the content size exceeds the specified container size where the content is enclosed. If the value of overflow is hidden, the content gets clipped post the size of the container thereby making the content invisible. For example,
+
+div {
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+}
+If the content of the div is very large and exceeds the height of 50px, the content gets clipped post 50px and the rest of the content is not made visible.
+
+Q.What is CSS overflow?
+The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars. The overflow contains the following property:
+
+visible
+hidden
+scroll
+auto
+1. Visible: The content is not clipped and is visible outside the element box.
+
+2. Hidden: The overflow is clipped and the rest of the content is invisible.
+
+3. Scroll: The overflow is clipped but a scrollbar is added to see the rest of the content. The scrollbar can be horizontal or vertical.
+
+4. Auto: It automatically adds a scrollbar whenever it is required.
+
+Overflow-x and Overflow-y: This property specifies how to change the overflow of elements. x deals with horizontal edges and y deals with vertical edges.
+
+Q.How do you create a sticky sidebar that scrolls with the content in CSS?
+To create a sticky sidebar that scrolls with the content in CSS, you can use the following approach:
+
+Apply "position: sticky;" to the sidebar element.
+Set "top: 0;" or "bottom: 0;" to define where the sticky element should stick within its containing block.
+Specify a suitable height or max-height for the sidebar and set "overflow: auto;" to enable scrolling when the content exceeds the available space.
+
+Q.How do you create a CSS-only sticky table header that remains visible during vertical scrolling?
+To create a CSS-only sticky table header, you can use the CSS position: sticky property along with appropriate styles. Here's an example:
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- table rows -->
+  </tbody>
+</table>
+cssCopy code
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+In this example, the table header (< thead >) is set to position: sticky with top: 0 to keep it fixed at the top of the table. The background-color property can be used to style the sticky header.
+
+Q.Explain the use of CSS "text-overflow" for handling text truncation and ellipsis.
+CSS "text-overflow" handles text truncation with ellipsis or clipping when content overflows its container. The “text-overflow” property improves user interface design by maintaining layout integrity and readability.
+
+Q.How do you create a CSS-only sticky table header that remains visible during vertical scrolling?
+To create a CSS-only sticky table header, you can use the CSS position: sticky property along with appropriate styles. Here's an example:
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- table rows -->
+  </tbody>
+</table>
+cssCopy code
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+In this example, the table header (< thead >) is set to position: sticky with top: 0 to keep it fixed at the top of the table. The background-color property can be used to style the sticky header.

@@ -1,0 +1,21 @@
+Q.How do you create a CSS-only sticky table header that remains visible during vertical scrolling?
+To create a CSS-only sticky table header, you can use the CSS position: sticky property along with appropriate styles. Here's an example:
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- table rows -->
+  </tbody>
+</table>
+cssCopy code
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+In this example, the table header (< thead >) is set to position: sticky with top: 0 to keep it fixed at the top of the table. The background-color property can be used to style the sticky header.

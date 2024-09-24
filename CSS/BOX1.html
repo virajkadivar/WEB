@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100px;
+            border: solid 2px rgb(128, 128, 128);
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto 0 auto;
+            padding: 10px;
+            background-color: black;
+            display: grid;
+            grid-template-areas: "boxo boxt"
+                "boxth boxfo ";
+            row-gap: 5px;
+            column-gap: 5px;
+            text-align: center;
+
+
+        }
+
+        .box-1 {
+            grid-area: boxo;
+            background-color: rgb(255, 123, 0);
+        }
+
+        .box-2 {
+            grid-area: boxt;
+            background-color: aqua;
+        }
+
+        .box-3 {
+            grid-area: boxth;
+            background-color: rgb(219, 85, 80);
+            /* height: 250px; */
+        }
+
+        .box-4 {
+            grid-area: boxfo;
+            background-color: aquamarine;
+            /* height: 250px; */
+            display: grid;
+            grid-template-areas: "boxf boxf"
+                "boxs boxse";
+        }
+
+        .box-5 {
+            grid-area: boxf;
+            background-color: rgb(0, 255, 170);
+        }
+
+        .box-6 {
+            grid-area: boxs;
+            background-color: aqua;
+        }
+
+        .box-7 {
+            grid-area: boxse;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box-1 box">box-1</div>
+        <div class="box-2 box">box-2</div>
+        <div class="box-3 box">box-3</div>
+        <div class="box-4 box">
+            <div class="box-5">box-5</div>
+            <div class="box-6">box-6</div>
+            <div class="box-7">box-7</div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

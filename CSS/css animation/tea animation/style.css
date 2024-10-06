@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+.container {
+    position: relative;
+    top: 60px;
+}
+
+.cup {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(218, 206, 206));
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.top {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, rgb(255, 255, 255),
+            rgb(218, 206, 206));
+    border-radius: 50%;
+}
+
+.round {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 92%;
+    height: 50px;
+    background: linear-gradient(to right, rgb(218, 202, 202),
+            rgb(255, 255, 255));
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.tea {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(197, 107, 55), rgb(241, 180, 133));
+    border-radius: 50%;
+}
+
+.handal {
+    position: absolute;
+    right: -93px;
+    top: 15px;
+    width: 190px;
+    height: 200px;
+    border: 25px solid rgb(223, 208, 208);
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(43deg);
+}
